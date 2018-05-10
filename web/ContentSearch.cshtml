@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Content Search Page";
+
+    if (IsPost)
+    {
+        Validation.RequireField("Search", "Search must not be empty");
+    }
+
+
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title.</h1>
+        </hgroup>
+    @if (Request.Cookies["Auth"] != null && Request.Cookies["Auth"]["controlData"] != null)
+    {
+        <form method="post">
+            <label for="Namespace">Search:</label>
+            <input type="text" name="Search" value="@Request.Form["Search"]" />
+            @Html.ValidationMessage("Search")
+            &nbsp;
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+
+    } else
+    {
+        Response.Cookies["Flash"]["message"] = "You must set your credentials";
+        Response.Redirect("/"); 
+    }
+
+    </div>
+</section>
+}
+
+@{
+    if (IsPost & Validation.IsValid())
+    {
+        FDKObjects.wsdl.SearchSoapClient objRequest = new FDKObjects.wsdl.SearchSoapClient();
+        string searchString = Request.Form["Search"];
+        FDKObjects.wsdl.ContentSearchResponse objResponse;
+        try
+        {
+            objResponse = objRequest.PerformContentSearch(HttpUtility.UrlDecode(Request.Cookies["Auth"]["controlData"]), 
+                                                          searchString, 
+                                                          10, 
+                                                          FDKObjects.wsdl.SearchSortOrder.PublicationDateChronological, 
+                                                          FDKObjects.wsdl.SearchContentCategory.Publications, 
+                                                          FDKObjects.wsdl.DateFormat.MMDDCCYY);
+
+            <p>@objResponse.contentSearchResult.contentHeadlinesResultSet.count headlines retrieved.</p>
+        }
+        catch (System.Web.Services.Protocols.SoapException exs)
+        {
+            <p>@exs.Detail.OuterXml.ToString()</p>
+        }
+        catch (System.ServiceModel.FaultException fex)
+        {
+            <p>There was an error with this request. Please check the logs for more information. @fex.Reason.ToString()</p>
+
+        }
+
+
+
+    }
+}

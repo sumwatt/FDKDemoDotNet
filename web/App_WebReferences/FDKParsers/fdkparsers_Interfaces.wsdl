@@ -1,0 +1,2563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:types="urn:factiva:developer:v3_0:parsers" xmlns:intf="urn:factiva:developer:v3_16:parsers:intf" targetNamespace="urn:factiva:developer:v3_16:parsers:intf" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns="urn:factiva:developer:v3_0:parsers" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:factiva:developer:v3_0:parsers">
+      <xsd:include schemaLocation="../schema/fdkparsers_types.xsd" />
+    </xsd:schema>
+  </types>
+  <message name="PerformCompanyScreeningSoapIn">
+    <part name="parameters" element="types:PerformCompanyScreening" />
+  </message>
+  <message name="PerformCompanyScreeningSoapOut">
+    <part name="parameters" element="types:PerformCompanyScreeningResponse" />
+  </message>
+  <message name="PerformCompanyScreeningExSoapIn">
+    <part name="parameters" element="types:PerformCompanyScreeningEx" />
+  </message>
+  <message name="PerformCompanyScreeningExSoapOut">
+    <part name="parameters" element="types:PerformCompanyScreeningExResponse" />
+  </message>
+  <message name="SortCompanyProfilesSoapIn">
+    <part name="parameters" element="types:SortCompanyProfiles" />
+  </message>
+  <message name="SortCompanyProfilesSoapOut">
+    <part name="parameters" element="types:SortCompanyProfilesResponse" />
+  </message>
+  <message name="SortCompanyProfilesExSoapIn">
+    <part name="parameters" element="types:SortCompanyProfilesEx" />
+  </message>
+  <message name="SortCompanyProfilesExSoapOut">
+    <part name="parameters" element="types:SortCompanyProfilesExResponse" />
+  </message>
+  <message name="GetCompanyProfilesSoapIn">
+    <part name="parameters" element="types:GetCompanyProfiles" />
+  </message>
+  <message name="GetCompanyProfilesSoapOut">
+    <part name="parameters" element="types:GetCompanyProfilesResponse" />
+  </message>
+  <message name="GetCompanyProfilesExSoapIn">
+    <part name="parameters" element="types:GetCompanyProfilesEx" />
+  </message>
+  <message name="GetCompanyProfilesExSoapOut">
+    <part name="parameters" element="types:GetCompanyProfilesExResponse" />
+  </message>
+  <message name="GetCompanyProfilesEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyProfilesEx2" />
+  </message>
+  <message name="GetCompanyProfilesEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyProfilesEx2Response" />
+  </message>
+  <message name="PerformCompanyComparisonSoapIn">
+    <part name="parameters" element="types:PerformCompanyComparison" />
+  </message>
+  <message name="PerformCompanyComparisonSoapOut">
+    <part name="parameters" element="types:PerformCompanyComparisonResponse" />
+  </message>
+  <message name="PerformCompanyPeerComparisonSoapIn">
+    <part name="parameters" element="types:PerformCompanyPeerComparison" />
+  </message>
+  <message name="PerformCompanyPeerComparisonSoapOut">
+    <part name="parameters" element="types:PerformCompanyPeerComparisonResponse" />
+  </message>
+  <message name="PerformCompanyPeerComparisonExSoapIn">
+    <part name="parameters" element="types:PerformCompanyPeerComparisonEx" />
+  </message>
+  <message name="PerformCompanyPeerComparisonExSoapOut">
+    <part name="parameters" element="types:PerformCompanyPeerComparisonExResponse" />
+  </message>
+  <message name="GetCompanyDetailsListSoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsList" />
+  </message>
+  <message name="GetCompanyDetailsListSoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListResponse" />
+  </message>
+  <message name="GetCompanyDetailsListExSoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx" />
+  </message>
+  <message name="GetCompanyDetailsListExSoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListExResponse" />
+  </message>
+  <message name="GetCompanyDetailsListEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx2" />
+  </message>
+  <message name="GetCompanyDetailsListEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListEx2Response" />
+  </message>
+  <message name="GetCompanyDetailsListEx3SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx3" />
+  </message>
+  <message name="GetCompanyDetailsListEx3SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListEx3Response" />
+  </message>
+  <message name="GetCompanyDetailsListEx4SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx4" />
+  </message>
+  <message name="GetCompanyDetailsListEx4SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListEx4Response" />
+  </message>
+  <message name="GetCompanyDetailsListEx5SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx5" />
+  </message>
+  <message name="GetCompanyDetailsListEx5SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListEx5Response" />
+  </message>
+  <message name="GetCompanyDetailsListEx6SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsListEx6" />
+  </message>
+  <message name="GetCompanyDetailsListEx6SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsListEx6Response" />
+  </message>
+  <message name="GetCompanyDetailsSoapIn">
+    <part name="parameters" element="types:GetCompanyDetails" />
+  </message>
+  <message name="GetCompanyDetailsSoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsResponse" />
+  </message>
+  <message name="GetCompanyDetailsExSoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsEx" />
+  </message>
+  <message name="GetCompanyDetailsExSoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsExResponse" />
+  </message>
+  <message name="GetCompanyDetailsEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsEx2" />
+  </message>
+  <message name="GetCompanyDetailsEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsEx2Response" />
+  </message>
+  <message name="GetCompanyDetailsEx3SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsEx3" />
+  </message>
+  <message name="GetCompanyDetailsEx3SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsEx3Response" />
+  </message>
+  <message name="GetCompanyDetailsEx4SoapIn">
+    <part name="parameters" element="types:GetCompanyDetailsEx4" />
+  </message>
+  <message name="GetCompanyDetailsEx4SoapOut">
+    <part name="parameters" element="types:GetCompanyDetailsEx4Response" />
+  </message>
+  <message name="GetIndustryAveragesSoapIn">
+    <part name="parameters" element="types:GetIndustryAverages" />
+  </message>
+  <message name="GetIndustryAveragesSoapOut">
+    <part name="parameters" element="types:GetIndustryAveragesResponse" />
+  </message>
+  <message name="PerformCompanyNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:PerformCompanyNewsBriefsSearch" />
+  </message>
+  <message name="PerformCompanyNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:PerformCompanyNewsBriefsSearchResponse" />
+  </message>
+  <message name="PerformCompanyNewsBriefsSearchExSoapIn">
+    <part name="parameters" element="types:PerformCompanyNewsBriefsSearchEx" />
+  </message>
+  <message name="PerformCompanyNewsBriefsSearchExSoapOut">
+    <part name="parameters" element="types:PerformCompanyNewsBriefsSearchExResponse" />
+  </message>
+  <message name="ContinueCompanyNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:ContinueCompanyNewsBriefsSearch" />
+  </message>
+  <message name="ContinueCompanyNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:ContinueCompanyNewsBriefsSearchResponse" />
+  </message>
+  <message name="PerformIndustryNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:PerformIndustryNewsBriefsSearch" />
+  </message>
+  <message name="PerformIndustryNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:PerformIndustryNewsBriefsSearchResponse" />
+  </message>
+  <message name="PerformIndustryNewsBriefsSearchExSoapIn">
+    <part name="parameters" element="types:PerformIndustryNewsBriefsSearchEx" />
+  </message>
+  <message name="PerformIndustryNewsBriefsSearchExSoapOut">
+    <part name="parameters" element="types:PerformIndustryNewsBriefsSearchExResponse" />
+  </message>
+  <message name="ContinueIndustryNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:ContinueIndustryNewsBriefsSearch" />
+  </message>
+  <message name="ContinueIndustryNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:ContinueIndustryNewsBriefsSearchResponse" />
+  </message>
+  <message name="PerformPublishedCompanyReportsSearchSoapIn">
+    <part name="parameters" element="types:PerformPublishedCompanyReportsSearch" />
+  </message>
+  <message name="PerformPublishedCompanyReportsSearchSoapOut">
+    <part name="parameters" element="types:PerformPublishedCompanyReportsSearchResponse" />
+  </message>
+  <message name="PerformPublishedIndustryReportsSearchSoapIn">
+    <part name="parameters" element="types:PerformPublishedIndustryReportsSearch" />
+  </message>
+  <message name="PerformPublishedIndustryReportsSearchSoapOut">
+    <part name="parameters" element="types:PerformPublishedIndustryReportsSearchResponse" />
+  </message>
+  <message name="PerformCompanyKeyDevelopmentsSearchSoapIn">
+    <part name="parameters" element="types:PerformCompanyKeyDevelopmentsSearch" />
+  </message>
+  <message name="PerformCompanyKeyDevelopmentsSearchSoapOut">
+    <part name="parameters" element="types:PerformCompanyKeyDevelopmentsSearchResponse" />
+  </message>
+  <message name="PerformCompanyKeyDevelopmentsSearchExSoapIn">
+    <part name="parameters" element="types:PerformCompanyKeyDevelopmentsSearchEx" />
+  </message>
+  <message name="PerformCompanyKeyDevelopmentsSearchExSoapOut">
+    <part name="parameters" element="types:PerformCompanyKeyDevelopmentsSearchExResponse" />
+  </message>
+  <message name="GetCompanyReportSoapIn">
+    <part name="parameters" element="types:GetCompanyReport" />
+  </message>
+  <message name="GetCompanyReportSoapOut">
+    <part name="parameters" element="types:GetCompanyReportResponse" />
+  </message>
+  <message name="GetCompanyReportExSoapIn">
+    <part name="parameters" element="types:GetCompanyReportEx" />
+  </message>
+  <message name="GetCompanyReportExSoapOut">
+    <part name="parameters" element="types:GetCompanyReportExResponse" />
+  </message>
+  <message name="GetCompanyReportEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyReportEx2" />
+  </message>
+  <message name="GetCompanyReportEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyReportEx2Response" />
+  </message>
+  <message name="GetCompanyReportEx3SoapIn">
+    <part name="parameters" element="types:GetCompanyReportEx3" />
+  </message>
+  <message name="GetCompanyReportEx3SoapOut">
+    <part name="parameters" element="types:GetCompanyReportEx3Response" />
+  </message>
+  <message name="GetCompanyReportEx4SoapIn">
+    <part name="parameters" element="types:GetCompanyReportEx4" />
+  </message>
+  <message name="GetCompanyReportEx4SoapOut">
+    <part name="parameters" element="types:GetCompanyReportEx4Response" />
+  </message>
+  <message name="GetCompanyReportEx5SoapIn">
+    <part name="parameters" element="types:GetCompanyReportEx5" />
+  </message>
+  <message name="GetCompanyReportEx5SoapOut">
+    <part name="parameters" element="types:GetCompanyReportEx5Response" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsSoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatements" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsSoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsResponse" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsExSoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsExSoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsExResponse" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx2" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx2Response" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx3SoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx3" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx3SoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx3Response" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx4SoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx4" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx4SoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx4Response" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx5SoapIn">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx5" />
+  </message>
+  <message name="GetCompanyReportWithFinancialStatementsEx5SoapOut">
+    <part name="parameters" element="types:GetCompanyReportWithFinancialStatementsEx5Response" />
+  </message>
+  <message name="GetRatioComparisonReportSoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReport" />
+  </message>
+  <message name="GetRatioComparisonReportSoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportResponse" />
+  </message>
+  <message name="GetRatioComparisonReportExSoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReportEx" />
+  </message>
+  <message name="GetRatioComparisonReportExSoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportExResponse" />
+  </message>
+  <message name="GetRatioComparisonReportEx2SoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReportEx2" />
+  </message>
+  <message name="GetRatioComparisonReportEx2SoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportEx2Response" />
+  </message>
+  <message name="GetRatioComparisonReportEx3SoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReportEx3" />
+  </message>
+  <message name="GetRatioComparisonReportEx3SoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportEx3Response" />
+  </message>
+  <message name="GetRatioComparisonReportEx4SoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReportEx4" />
+  </message>
+  <message name="GetRatioComparisonReportEx4SoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportEx4Response" />
+  </message>
+  <message name="GetRatioComparisonReportEx5SoapIn">
+    <part name="parameters" element="types:GetRatioComparisonReportEx5" />
+  </message>
+  <message name="GetRatioComparisonReportEx5SoapOut">
+    <part name="parameters" element="types:GetRatioComparisonReportEx5Response" />
+  </message>
+  <message name="PerformCompanySnapshotSoapIn">
+    <part name="parameters" element="types:PerformCompanySnapshot" />
+  </message>
+  <message name="PerformCompanySnapshotSoapOut">
+    <part name="parameters" element="types:PerformCompanySnapshotResponse" />
+  </message>
+  <message name="PerformCompanySnapshotExSoapIn">
+    <part name="parameters" element="types:PerformCompanySnapshotEx" />
+  </message>
+  <message name="PerformCompanySnapshotExSoapOut">
+    <part name="parameters" element="types:PerformCompanySnapshotExResponse" />
+  </message>
+  <message name="PerformCompanySnapshotEx2SoapIn">
+    <part name="parameters" element="types:PerformCompanySnapshotEx2" />
+  </message>
+  <message name="PerformCompanySnapshotEx2SoapOut">
+    <part name="parameters" element="types:PerformCompanySnapshotEx2Response" />
+  </message>
+  <message name="PerformCompanySnapshotEx3SoapIn">
+    <part name="parameters" element="types:PerformCompanySnapshotEx3" />
+  </message>
+  <message name="PerformCompanySnapshotEx3SoapOut">
+    <part name="parameters" element="types:PerformCompanySnapshotEx3Response" />
+  </message>
+  <message name="PerformIndustrySnapshotSoapIn">
+    <part name="parameters" element="types:PerformIndustrySnapshot" />
+  </message>
+  <message name="PerformIndustrySnapshotSoapOut">
+    <part name="parameters" element="types:PerformIndustrySnapshotResponse" />
+  </message>
+  <message name="PerformExecutiveScreeningSoapIn">
+    <part name="parameters" element="types:PerformExecutiveScreening" />
+  </message>
+  <message name="PerformExecutiveScreeningSoapOut">
+    <part name="parameters" element="types:PerformExecutiveScreeningResponse" />
+  </message>
+  <message name="PerformExecutiveScreeningExSoapIn">
+    <part name="parameters" element="types:PerformExecutiveScreeningEx" />
+  </message>
+  <message name="PerformExecutiveScreeningExSoapOut">
+    <part name="parameters" element="types:PerformExecutiveScreeningExResponse" />
+  </message>
+  <message name="PerformExecutiveScreeningEx2SoapIn">
+    <part name="parameters" element="types:PerformExecutiveScreeningEx2" />
+  </message>
+  <message name="PerformExecutiveScreeningEx2SoapOut">
+    <part name="parameters" element="types:PerformExecutiveScreeningEx2Response" />
+  </message>
+  <message name="PerformExecutiveSearchSoapIn">
+    <part name="parameters" element="types:PerformExecutiveSearch" />
+  </message>
+  <message name="PerformExecutiveSearchSoapOut">
+    <part name="parameters" element="types:PerformExecutiveSearchResponse" />
+  </message>
+  <message name="PerformExecutiveSearchExSoapIn">
+    <part name="parameters" element="types:PerformExecutiveSearchEx" />
+  </message>
+  <message name="PerformExecutiveSearchExSoapOut">
+    <part name="parameters" element="types:PerformExecutiveSearchExResponse" />
+  </message>
+  <message name="PerformExecutiveSearchEx2SoapIn">
+    <part name="parameters" element="types:PerformExecutiveSearchEx2" />
+  </message>
+  <message name="PerformExecutiveSearchEx2SoapOut">
+    <part name="parameters" element="types:PerformExecutiveSearchEx2Response" />
+  </message>
+  <message name="PerformExecutiveSearchEx3SoapIn">
+    <part name="parameters" element="types:PerformExecutiveSearchEx3" />
+  </message>
+  <message name="PerformExecutiveSearchEx3SoapOut">
+    <part name="parameters" element="types:PerformExecutiveSearchEx3Response" />
+  </message>
+  <message name="PerformExecutiveSearchEx4SoapIn">
+    <part name="parameters" element="types:PerformExecutiveSearchEx4" />
+  </message>
+  <message name="PerformExecutiveSearchEx4SoapOut">
+    <part name="parameters" element="types:PerformExecutiveSearchEx4Response" />
+  </message>
+  <message name="ContinueExecutiveSearchSoapIn">
+    <part name="parameters" element="types:ContinueExecutiveSearch" />
+  </message>
+  <message name="ContinueExecutiveSearchSoapOut">
+    <part name="parameters" element="types:ContinueExecutiveSearchResponse" />
+  </message>
+  <message name="ContinueExecutiveSearchExSoapIn">
+    <part name="parameters" element="types:ContinueExecutiveSearchEx" />
+  </message>
+  <message name="ContinueExecutiveSearchExSoapOut">
+    <part name="parameters" element="types:ContinueExecutiveSearchExResponse" />
+  </message>
+  <message name="ContinueExecutiveSearchEx4SoapIn">
+    <part name="parameters" element="types:ContinueExecutiveSearchEx4" />
+  </message>
+  <message name="ContinueExecutiveSearchEx4SoapOut">
+    <part name="parameters" element="types:ContinueExecutiveSearchEx4Response" />
+  </message>
+  <message name="SortExecutiveProfilesSoapIn">
+    <part name="parameters" element="types:SortExecutiveProfiles" />
+  </message>
+  <message name="SortExecutiveProfilesSoapOut">
+    <part name="parameters" element="types:SortExecutiveProfilesResponse" />
+  </message>
+  <message name="GetExecutiveProfilesSoapIn">
+    <part name="parameters" element="types:GetExecutiveProfiles" />
+  </message>
+  <message name="GetExecutiveProfilesSoapOut">
+    <part name="parameters" element="types:GetExecutiveProfilesResponse" />
+  </message>
+  <message name="GetExecutiveProfilesExSoapIn">
+    <part name="parameters" element="types:GetExecutiveProfilesEx" />
+  </message>
+  <message name="GetExecutiveProfilesExSoapOut">
+    <part name="parameters" element="types:GetExecutiveProfilesExResponse" />
+  </message>
+  <message name="GetExecutiveProfilesEx2SoapIn">
+    <part name="parameters" element="types:GetExecutiveProfilesEx2" />
+  </message>
+  <message name="GetExecutiveProfilesEx2SoapOut">
+    <part name="parameters" element="types:GetExecutiveProfilesEx2Response" />
+  </message>
+  <message name="GetExecutiveDetailsSoapIn">
+    <part name="parameters" element="types:GetExecutiveDetails" />
+  </message>
+  <message name="GetExecutiveDetailsSoapOut">
+    <part name="parameters" element="types:GetExecutiveDetailsResponse" />
+  </message>
+  <message name="GetExecutiveDetailsExSoapIn">
+    <part name="parameters" element="types:GetExecutiveDetailsEx" />
+  </message>
+  <message name="GetExecutiveDetailsExSoapOut">
+    <part name="parameters" element="types:GetExecutiveDetailsExResponse" />
+  </message>
+  <message name="GetExecutiveDetailsEx2SoapIn">
+    <part name="parameters" element="types:GetExecutiveDetailsEx2" />
+  </message>
+  <message name="GetExecutiveDetailsEx2SoapOut">
+    <part name="parameters" element="types:GetExecutiveDetailsEx2Response" />
+  </message>
+  <message name="GetExecutiveDetailsEx3SoapIn">
+    <part name="parameters" element="types:GetExecutiveDetailsEx3" />
+  </message>
+  <message name="GetExecutiveDetailsEx3SoapOut">
+    <part name="parameters" element="types:GetExecutiveDetailsEx3Response" />
+  </message>
+  <message name="PerformExecutiveNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:PerformExecutiveNewsBriefsSearch" />
+  </message>
+  <message name="PerformExecutiveNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:PerformExecutiveNewsBriefsSearchResponse" />
+  </message>
+  <message name="PerformExecutiveNewsBriefsSearchExSoapIn">
+    <part name="parameters" element="types:PerformExecutiveNewsBriefsSearchEx" />
+  </message>
+  <message name="PerformExecutiveNewsBriefsSearchExSoapOut">
+    <part name="parameters" element="types:PerformExecutiveNewsBriefsSearchExResponse" />
+  </message>
+  <message name="ContinueExecutiveNewsBriefsSearchSoapIn">
+    <part name="parameters" element="types:ContinueExecutiveNewsBriefsSearch" />
+  </message>
+  <message name="ContinueExecutiveNewsBriefsSearchSoapOut">
+    <part name="parameters" element="types:ContinueExecutiveNewsBriefsSearchResponse" />
+  </message>
+  <message name="GetDNBCompanyProfileSoapIn">
+    <part name="parameters" element="types:GetDNBCompanyProfile" />
+  </message>
+  <message name="GetDNBCompanyProfileSoapOut">
+    <part name="parameters" element="types:GetDNBCompanyProfileResponse" />
+  </message>
+  <message name="GetDNBCompanyChildrenSoapIn">
+    <part name="parameters" element="types:GetDNBCompanyChildren" />
+  </message>
+  <message name="GetDNBCompanyChildrenSoapOut">
+    <part name="parameters" element="types:GetDNBCompanyChildrenResponse" />
+  </message>
+  <message name="GetDNBCompanyBranchLocationsSoapIn">
+    <part name="parameters" element="types:GetDNBCompanyBranchLocations" />
+  </message>
+  <message name="GetDNBCompanyBranchLocationsSoapOut">
+    <part name="parameters" element="types:GetDNBCompanyBranchLocationsResponse" />
+  </message>
+  <message name="GetDNBCompanyGlobalUltimateSoapIn">
+    <part name="parameters" element="types:GetDNBCompanyGlobalUltimate" />
+  </message>
+  <message name="GetDNBCompanyGlobalUltimateSoapOut">
+    <part name="parameters" element="types:GetDNBCompanyGlobalUltimateResponse" />
+  </message>
+  <message name="GetDNBCompanyTreeSoapIn">
+    <part name="parameters" element="types:GetDNBCompanyTree" />
+  </message>
+  <message name="GetDNBCompanyTreeSoapOut">
+    <part name="parameters" element="types:GetDNBCompanyTreeResponse" />
+  </message>
+  <message name="GetUSGovernmentOrganizationsSoapIn">
+    <part name="parameters" element="types:GetUSGovernmentOrganizations" />
+  </message>
+  <message name="GetUSGovernmentOrganizationsSoapOut">
+    <part name="parameters" element="types:GetUSGovernmentOrganizationsResponse" />
+  </message>
+  <message name="GetUSGovernmentOrganizationSnapshotSoapIn">
+    <part name="parameters" element="types:GetUSGovernmentOrganizationSnapshot" />
+  </message>
+  <message name="GetUSGovernmentOrganizationSnapshotSoapOut">
+    <part name="parameters" element="types:GetUSGovernmentOrganizationSnapshotResponse" />
+  </message>
+  <message name="PerformUSGovernmentExecutiveSearchSoapIn">
+    <part name="parameters" element="types:PerformUSGovernmentExecutiveSearch" />
+  </message>
+  <message name="PerformUSGovernmentExecutiveSearchSoapOut">
+    <part name="parameters" element="types:PerformUSGovernmentExecutiveSearchResponse" />
+  </message>
+  <message name="GetUSGovernmentExecutiveSnapshotSoapIn">
+    <part name="parameters" element="types:GetUSGovernmentExecutiveSnapshot" />
+  </message>
+  <message name="GetUSGovernmentExecutiveSnapshotSoapOut">
+    <part name="parameters" element="types:GetUSGovernmentExecutiveSnapshotResponse" />
+  </message>
+  <message name="GetQuoteSoapIn">
+    <part name="parameters" element="types:GetQuote" />
+  </message>
+  <message name="GetQuoteSoapOut">
+    <part name="parameters" element="types:GetQuoteResponse" />
+  </message>
+  <message name="PerformLoginSoapIn">
+    <part name="parameters" element="types:PerformLogin" />
+  </message>
+  <message name="PerformLoginSoapOut">
+    <part name="parameters" element="types:PerformLoginResponse" />
+  </message>
+  <message name="PerformEncryptedIDLoginSoapIn">
+    <part name="parameters" element="types:PerformEncryptedIDLogin" />
+  </message>
+  <message name="PerformEncryptedIDLoginSoapOut">
+    <part name="parameters" element="types:PerformEncryptedIDLoginResponse" />
+  </message>
+  <message name="PerformEmailAddressLoginSoapIn">
+    <part name="parameters" element="types:PerformEmailAddressLogin" />
+  </message>
+  <message name="PerformEmailAddressLoginSoapOut">
+    <part name="parameters" element="types:PerformEmailAddressLoginResponse" />
+  </message>
+  <message name="PerformLogoutSoapIn">
+    <part name="parameters" element="types:PerformLogout" />
+  </message>
+  <message name="PerformLogoutSoapOut">
+    <part name="parameters" element="types:PerformLogoutResponse" />
+  </message>
+  <message name="GetEncryptedIDSoapIn">
+    <part name="parameters" element="types:GetEncryptedID" />
+  </message>
+  <message name="GetEncryptedIDSoapOut">
+    <part name="parameters" element="types:GetEncryptedIDResponse" />
+  </message>
+  <message name="GetAccountInfoSoapIn">
+    <part name="parameters" element="types:GetAccountInfo" />
+  </message>
+  <message name="GetAccountInfoSoapOut">
+    <part name="parameters" element="types:GetAccountInfoResponse" />
+  </message>
+  <message name="GetClientCodeSoapIn">
+    <part name="parameters" element="types:GetClientCode" />
+  </message>
+  <message name="GetClientCodeSoapOut">
+    <part name="parameters" element="types:GetClientCodeResponse" />
+  </message>
+  <message name="SetClientCodeSoapIn">
+    <part name="parameters" element="types:SetClientCode" />
+  </message>
+  <message name="SetClientCodeSoapOut">
+    <part name="parameters" element="types:SetClientCodeResponse" />
+  </message>
+  <message name="GetNewsstandSourcesSoapIn">
+    <part name="parameters" element="types:GetNewsstandSources" />
+  </message>
+  <message name="GetNewsstandSourcesSoapOut">
+    <part name="parameters" element="types:GetNewsstandSourcesResponse" />
+  </message>
+  <message name="GetNewsstandSectionsSoapIn">
+    <part name="parameters" element="types:GetNewsstandSections" />
+  </message>
+  <message name="GetNewsstandSectionsSoapOut">
+    <part name="parameters" element="types:GetNewsstandSectionsResponse" />
+  </message>
+  <message name="GetNewsstandHeadlinesSoapIn">
+    <part name="parameters" element="types:GetNewsstandHeadlines" />
+  </message>
+  <message name="GetNewsstandHeadlinesSoapOut">
+    <part name="parameters" element="types:GetNewsstandHeadlinesResponse" />
+  </message>
+  <message name="GetNewsstandHeadlinesWithFDTSoapIn">
+    <part name="parameters" element="types:GetNewsstandHeadlinesWithFDT" />
+  </message>
+  <message name="GetNewsstandHeadlinesWithFDTSoapOut">
+    <part name="parameters" element="types:GetNewsstandHeadlinesWithFDTResponse" />
+  </message>
+  <message name="ContinueNewsstandHeadlinesWithFDTSoapIn">
+    <part name="parameters" element="types:ContinueNewsstandHeadlinesWithFDT" />
+  </message>
+  <message name="ContinueNewsstandHeadlinesWithFDTSoapOut">
+    <part name="parameters" element="types:ContinueNewsstandHeadlinesWithFDTResponse" />
+  </message>
+  <message name="GetUserDataSoapIn">
+    <part name="parameters" element="types:GetUserData" />
+  </message>
+  <message name="GetUserDataSoapOut">
+    <part name="parameters" element="types:GetUserDataResponse" />
+  </message>
+  <message name="GetUserDataExSoapIn">
+    <part name="parameters" element="types:GetUserDataEx" />
+  </message>
+  <message name="GetUserDataExSoapOut">
+    <part name="parameters" element="types:GetUserDataExResponse" />
+  </message>
+  <message name="PerformUserRegistrationSoapIn">
+    <part name="parameters" element="types:PerformUserRegistration" />
+  </message>
+  <message name="PerformUserRegistrationSoapOut">
+    <part name="parameters" element="types:PerformUserRegistrationResponse" />
+  </message>
+  <message name="PerformUserRegistrationExSoapIn">
+    <part name="parameters" element="types:PerformUserRegistrationEx" />
+  </message>
+  <message name="PerformUserRegistrationExSoapOut">
+    <part name="parameters" element="types:PerformUserRegistrationExResponse" />
+  </message>
+  <message name="UpdateUserDataSoapIn">
+    <part name="parameters" element="types:UpdateUserData" />
+  </message>
+  <message name="UpdateUserDataSoapOut">
+    <part name="parameters" element="types:UpdateUserDataResponse" />
+  </message>
+  <message name="UpdateUserDataExSoapIn">
+    <part name="parameters" element="types:UpdateUserDataEx" />
+  </message>
+  <message name="UpdateUserDataExSoapOut">
+    <part name="parameters" element="types:UpdateUserDataExResponse" />
+  </message>
+  <message name="UpdateUserPasswordSoapIn">
+    <part name="parameters" element="types:UpdateUserPassword" />
+  </message>
+  <message name="UpdateUserPasswordSoapOut">
+    <part name="parameters" element="types:UpdateUserPasswordResponse" />
+  </message>
+  <message name="ResetUserPasswordSoapIn">
+    <part name="parameters" element="types:ResetUserPassword" />
+  </message>
+  <message name="ResetUserPasswordSoapOut">
+    <part name="parameters" element="types:ResetUserPasswordResponse" />
+  </message>
+  <message name="PerformSimplifiedEmailAddressRegistrationSoapIn">
+    <part name="parameters" element="types:PerformSimplifiedEmailAddressRegistration" />
+  </message>
+  <message name="PerformSimplifiedEmailAddressRegistrationSoapOut">
+    <part name="parameters" element="types:PerformSimplifiedEmailAddressRegistrationResponse" />
+  </message>
+  <message name="UpdateLoginEmailAddressSoapIn">
+    <part name="parameters" element="types:UpdateLoginEmailAddress" />
+  </message>
+  <message name="UpdateLoginEmailAddressSoapOut">
+    <part name="parameters" element="types:UpdateLoginEmailAddressResponse" />
+  </message>
+  <message name="EnableEmailAddressForLoginSoapIn">
+    <part name="parameters" element="types:EnableEmailAddressForLogin" />
+  </message>
+  <message name="EnableEmailAddressForLoginSoapOut">
+    <part name="parameters" element="types:EnableEmailAddressForLoginResponse" />
+  </message>
+  <message name="SetupUserForEmailAddressLoginSoapIn">
+    <part name="parameters" element="types:SetupUserForEmailAddressLogin" />
+  </message>
+  <message name="SetupUserForEmailAddressLoginSoapOut">
+    <part name="parameters" element="types:SetupUserForEmailAddressLoginResponse" />
+  </message>
+  <message name="PerformEmailAddressRegistrationSoapIn">
+    <part name="parameters" element="types:PerformEmailAddressRegistration" />
+  </message>
+  <message name="PerformEmailAddressRegistrationSoapOut">
+    <part name="parameters" element="types:PerformEmailAddressRegistrationResponse" />
+  </message>
+  <message name="PerformEmailAddressRegistrationExSoapIn">
+    <part name="parameters" element="types:PerformEmailAddressRegistrationEx" />
+  </message>
+  <message name="PerformEmailAddressRegistrationExSoapOut">
+    <part name="parameters" element="types:PerformEmailAddressRegistrationExResponse" />
+  </message>
+  <message name="GetExternalReaderProfilesSoapIn">
+    <part name="parameters" element="types:GetExternalReaderProfiles" />
+  </message>
+  <message name="GetExternalReaderProfilesSoapOut">
+    <part name="parameters" element="types:GetExternalReaderProfilesResponse" />
+  </message>
+  <message name="GetArticleSoapIn">
+    <part name="parameters" element="types:GetArticle" />
+  </message>
+  <message name="GetArticleSoapOut">
+    <part name="parameters" element="types:GetArticleResponse" />
+  </message>
+  <message name="GetArticleExSoapIn">
+    <part name="parameters" element="types:GetArticleEx" />
+  </message>
+  <message name="GetArticleExSoapOut">
+    <part name="parameters" element="types:GetArticleExResponse" />
+  </message>
+  <message name="GetHTMLSoapIn">
+    <part name="parameters" element="types:GetHTML" />
+  </message>
+  <message name="GetHTMLSoapOut">
+    <part name="parameters" element="types:GetHTMLResponse" />
+  </message>
+  <message name="GetPictureSoapIn">
+    <part name="parameters" element="types:GetPicture" />
+  </message>
+  <message name="GetPictureSoapOut">
+    <part name="parameters" element="types:GetPictureResponse" />
+  </message>
+  <message name="GetPDFSoapIn">
+    <part name="parameters" element="types:GetPDF" />
+  </message>
+  <message name="GetPDFSoapOut">
+    <part name="parameters" element="types:GetPDFResponse" />
+  </message>
+  <message name="GetExternalURLSoapIn">
+    <part name="parameters" element="types:GetExternalURL" />
+  </message>
+  <message name="GetExternalURLSoapOut">
+    <part name="parameters" element="types:GetExternalURLResponse" />
+  </message>
+  <message name="GetContentSoapIn">
+    <part name="parameters" element="types:GetContent" />
+  </message>
+  <message name="GetContentSoapOut">
+    <part name="parameters" element="types:GetContentResponse" />
+  </message>
+  <message name="PerformContentSearchSoapIn">
+    <part name="parameters" element="types:PerformContentSearch" />
+  </message>
+  <message name="PerformContentSearchSoapOut">
+    <part name="parameters" element="types:PerformContentSearchResponse" />
+  </message>
+  <message name="ContinueContentSearchSoapIn">
+    <part name="parameters" element="types:ContinueContentSearch" />
+  </message>
+  <message name="ContinueContentSearchSoapOut">
+    <part name="parameters" element="types:ContinueContentSearchResponse" />
+  </message>
+  <message name="PerformContentSearchWithFDTSoapIn">
+    <part name="parameters" element="types:PerformContentSearchWithFDT" />
+  </message>
+  <message name="PerformContentSearchWithFDTSoapOut">
+    <part name="parameters" element="types:PerformContentSearchWithFDTResponse" />
+  </message>
+  <message name="PerformContentSearchWithFDTDedupSoapIn">
+    <part name="parameters" element="types:PerformContentSearchWithFDTDedup" />
+  </message>
+  <message name="PerformContentSearchWithFDTDedupSoapOut">
+    <part name="parameters" element="types:PerformContentSearchWithFDTDedupResponse" />
+  </message>
+  <message name="PerformContentSearchWithFDTDedupExSoapIn">
+    <part name="parameters" element="types:PerformContentSearchWithFDTDedupEx" />
+  </message>
+  <message name="PerformContentSearchWithFDTDedupExSoapOut">
+    <part name="parameters" element="types:PerformContentSearchWithFDTDedupExResponse" />
+  </message>
+  <message name="PerformContentSearchWithFDTExSoapIn">
+    <part name="parameters" element="types:PerformContentSearchWithFDTEx" />
+  </message>
+  <message name="PerformContentSearchWithFDTExSoapOut">
+    <part name="parameters" element="types:PerformContentSearchWithFDTExResponse" />
+  </message>
+  <message name="GetMaxNavigatorElementsSoapIn">
+    <part name="parameters" element="types:GetMaxNavigatorElements" />
+  </message>
+  <message name="GetMaxNavigatorElementsSoapOut">
+    <part name="parameters" element="types:GetMaxNavigatorElementsResponse" />
+  </message>
+  <message name="GetMaxNavigatorElementsExSoapIn">
+    <part name="parameters" element="types:GetMaxNavigatorElementsEx" />
+  </message>
+  <message name="GetMaxNavigatorElementsExSoapOut">
+    <part name="parameters" element="types:GetMaxNavigatorElementsExResponse" />
+  </message>
+  <message name="ContinueContentSearchWithFDTSoapIn">
+    <part name="parameters" element="types:ContinueContentSearchWithFDT" />
+  </message>
+  <message name="ContinueContentSearchWithFDTSoapOut">
+    <part name="parameters" element="types:ContinueContentSearchWithFDTResponse" />
+  </message>
+  <message name="ContinueContentSearchWithFDTDedupSoapIn">
+    <part name="parameters" element="types:ContinueContentSearchWithFDTDedup" />
+  </message>
+  <message name="ContinueContentSearchWithFDTDedupSoapOut">
+    <part name="parameters" element="types:ContinueContentSearchWithFDTDedupResponse" />
+  </message>
+  <message name="ContinueContentSearchWithFDTDedupExSoapIn">
+    <part name="parameters" element="types:ContinueContentSearchWithFDTDedupEx" />
+  </message>
+  <message name="ContinueContentSearchWithFDTDedupExSoapOut">
+    <part name="parameters" element="types:ContinueContentSearchWithFDTDedupExResponse" />
+  </message>
+  <message name="PerformSourceSearchSoapIn">
+    <part name="parameters" element="types:PerformSourceSearch" />
+  </message>
+  <message name="PerformSourceSearchSoapOut">
+    <part name="parameters" element="types:PerformSourceSearchResponse" />
+  </message>
+  <message name="PerformSourceSearchExSoapIn">
+    <part name="parameters" element="types:PerformSourceSearchEx" />
+  </message>
+  <message name="PerformSourceSearchExSoapOut">
+    <part name="parameters" element="types:PerformSourceSearchExResponse" />
+  </message>
+  <message name="ContinueSourceSearchSoapIn">
+    <part name="parameters" element="types:ContinueSourceSearch" />
+  </message>
+  <message name="ContinueSourceSearchSoapOut">
+    <part name="parameters" element="types:ContinueSourceSearchResponse" />
+  </message>
+  <message name="ContinueSourceSearchExSoapIn">
+    <part name="parameters" element="types:ContinueSourceSearchEx" />
+  </message>
+  <message name="ContinueSourceSearchExSoapOut">
+    <part name="parameters" element="types:ContinueSourceSearchExResponse" />
+  </message>
+  <message name="PerformSourceGroupSearchSoapIn">
+    <part name="parameters" element="types:PerformSourceGroupSearch" />
+  </message>
+  <message name="PerformSourceGroupSearchSoapOut">
+    <part name="parameters" element="types:PerformSourceGroupSearchResponse" />
+  </message>
+  <message name="PerformSourceGroupSearchExSoapIn">
+    <part name="parameters" element="types:PerformSourceGroupSearchEx" />
+  </message>
+  <message name="PerformSourceGroupSearchExSoapOut">
+    <part name="parameters" element="types:PerformSourceGroupSearchExResponse" />
+  </message>
+  <message name="ContinueSourceGroupSearchSoapIn">
+    <part name="parameters" element="types:ContinueSourceGroupSearch" />
+  </message>
+  <message name="ContinueSourceGroupSearchSoapOut">
+    <part name="parameters" element="types:ContinueSourceGroupSearchResponse" />
+  </message>
+  <message name="ContinueSourceGroupSearchExSoapIn">
+    <part name="parameters" element="types:ContinueSourceGroupSearchEx" />
+  </message>
+  <message name="ContinueSourceGroupSearchExSoapOut">
+    <part name="parameters" element="types:ContinueSourceGroupSearchExResponse" />
+  </message>
+  <message name="GetSourcesByCategorySoapIn">
+    <part name="parameters" element="types:GetSourcesByCategory" />
+  </message>
+  <message name="GetSourcesByCategorySoapOut">
+    <part name="parameters" element="types:GetSourcesByCategoryResponse" />
+  </message>
+  <message name="GetSourcesByCategoryExSoapIn">
+    <part name="parameters" element="types:GetSourcesByCategoryEx" />
+  </message>
+  <message name="GetSourcesByCategoryExSoapOut">
+    <part name="parameters" element="types:GetSourcesByCategoryExResponse" />
+  </message>
+  <message name="GetSourcesByTitleSoapIn">
+    <part name="parameters" element="types:GetSourcesByTitle" />
+  </message>
+  <message name="GetSourcesByTitleSoapOut">
+    <part name="parameters" element="types:GetSourcesByTitleResponse" />
+  </message>
+  <message name="GetSourcesByTitleExSoapIn">
+    <part name="parameters" element="types:GetSourcesByTitleEx" />
+  </message>
+  <message name="GetSourcesByTitleExSoapOut">
+    <part name="parameters" element="types:GetSourcesByTitleExResponse" />
+  </message>
+  <message name="GetSourcesByCodeSoapIn">
+    <part name="parameters" element="types:GetSourcesByCode" />
+  </message>
+  <message name="GetSourcesByCodeSoapOut">
+    <part name="parameters" element="types:GetSourcesByCodeResponse" />
+  </message>
+  <message name="GetSourceGroupsByCodeSoapIn">
+    <part name="parameters" element="types:GetSourceGroupsByCode" />
+  </message>
+  <message name="GetSourceGroupsByCodeSoapOut">
+    <part name="parameters" element="types:GetSourceGroupsByCodeResponse" />
+  </message>
+  <message name="PerformCompanySearchSoapIn">
+    <part name="parameters" element="types:PerformCompanySearch" />
+  </message>
+  <message name="PerformCompanySearchSoapOut">
+    <part name="parameters" element="types:PerformCompanySearchResponse" />
+  </message>
+  <message name="PerformCompanySearchExSoapIn">
+    <part name="parameters" element="types:PerformCompanySearchEx" />
+  </message>
+  <message name="PerformCompanySearchExSoapOut">
+    <part name="parameters" element="types:PerformCompanySearchExResponse" />
+  </message>
+  <message name="PerformCompanySearchEx2SoapIn">
+    <part name="parameters" element="types:PerformCompanySearchEx2" />
+  </message>
+  <message name="PerformCompanySearchEx2SoapOut">
+    <part name="parameters" element="types:PerformCompanySearchEx2Response" />
+  </message>
+  <message name="ContinueCompanySearchSoapIn">
+    <part name="parameters" element="types:ContinueCompanySearch" />
+  </message>
+  <message name="ContinueCompanySearchSoapOut">
+    <part name="parameters" element="types:ContinueCompanySearchResponse" />
+  </message>
+  <message name="ContinueCompanySearchExSoapIn">
+    <part name="parameters" element="types:ContinueCompanySearchEx" />
+  </message>
+  <message name="ContinueCompanySearchExSoapOut">
+    <part name="parameters" element="types:ContinueCompanySearchExResponse" />
+  </message>
+  <message name="ContinueCompanySearchEx2SoapIn">
+    <part name="parameters" element="types:ContinueCompanySearchEx2" />
+  </message>
+  <message name="ContinueCompanySearchEx2SoapOut">
+    <part name="parameters" element="types:ContinueCompanySearchEx2Response" />
+  </message>
+  <message name="GetCompanyByCodeSoapIn">
+    <part name="parameters" element="types:GetCompanyByCode" />
+  </message>
+  <message name="GetCompanyByCodeSoapOut">
+    <part name="parameters" element="types:GetCompanyByCodeResponse" />
+  </message>
+  <message name="GetCompanyByCodeExSoapIn">
+    <part name="parameters" element="types:GetCompanyByCodeEx" />
+  </message>
+  <message name="GetCompanyByCodeExSoapOut">
+    <part name="parameters" element="types:GetCompanyByCodeExResponse" />
+  </message>
+  <message name="GetCompanyByCodeEx2SoapIn">
+    <part name="parameters" element="types:GetCompanyByCodeEx2" />
+  </message>
+  <message name="GetCompanyByCodeEx2SoapOut">
+    <part name="parameters" element="types:GetCompanyByCodeEx2Response" />
+  </message>
+  <message name="PerformInstrumentSearchSoapIn">
+    <part name="parameters" element="types:PerformInstrumentSearch" />
+  </message>
+  <message name="PerformInstrumentSearchSoapOut">
+    <part name="parameters" element="types:PerformInstrumentSearchResponse" />
+  </message>
+  <message name="ContinueInstrumentSearchSoapIn">
+    <part name="parameters" element="types:ContinueInstrumentSearch" />
+  </message>
+  <message name="ContinueInstrumentSearchSoapOut">
+    <part name="parameters" element="types:ContinueInstrumentSearchResponse" />
+  </message>
+  <message name="GetInstrumentByCodeSoapIn">
+    <part name="parameters" element="types:GetInstrumentByCode" />
+  </message>
+  <message name="GetInstrumentByCodeSoapOut">
+    <part name="parameters" element="types:GetInstrumentByCodeResponse" />
+  </message>
+  <message name="PerformExchangeSearchSoapIn">
+    <part name="parameters" element="types:PerformExchangeSearch" />
+  </message>
+  <message name="PerformExchangeSearchSoapOut">
+    <part name="parameters" element="types:PerformExchangeSearchResponse" />
+  </message>
+  <message name="GetExchangeByCodeSoapIn">
+    <part name="parameters" element="types:GetExchangeByCode" />
+  </message>
+  <message name="GetExchangeByCodeSoapOut">
+    <part name="parameters" element="types:GetExchangeByCodeResponse" />
+  </message>
+  <message name="GetExchangeListSoapIn">
+    <part name="parameters" element="types:GetExchangeList" />
+  </message>
+  <message name="GetExchangeListSoapOut">
+    <part name="parameters" element="types:GetExchangeListResponse" />
+  </message>
+  <message name="PerformIndustrySearchSoapIn">
+    <part name="parameters" element="types:PerformIndustrySearch" />
+  </message>
+  <message name="PerformIndustrySearchSoapOut">
+    <part name="parameters" element="types:PerformIndustrySearchResponse" />
+  </message>
+  <message name="GetIndustryByCodeSoapIn">
+    <part name="parameters" element="types:GetIndustryByCode" />
+  </message>
+  <message name="GetIndustryByCodeSoapOut">
+    <part name="parameters" element="types:GetIndustryByCodeResponse" />
+  </message>
+  <message name="GetIndustryChildrenSoapIn">
+    <part name="parameters" element="types:GetIndustryChildren" />
+  </message>
+  <message name="GetIndustryChildrenSoapOut">
+    <part name="parameters" element="types:GetIndustryChildrenResponse" />
+  </message>
+  <message name="GetIndustryListSoapIn">
+    <part name="parameters" element="types:GetIndustryList" />
+  </message>
+  <message name="GetIndustryListSoapOut">
+    <part name="parameters" element="types:GetIndustryListResponse" />
+  </message>
+  <message name="PerformRegionSearchSoapIn">
+    <part name="parameters" element="types:PerformRegionSearch" />
+  </message>
+  <message name="PerformRegionSearchSoapOut">
+    <part name="parameters" element="types:PerformRegionSearchResponse" />
+  </message>
+  <message name="GetRegionByCodeSoapIn">
+    <part name="parameters" element="types:GetRegionByCode" />
+  </message>
+  <message name="GetRegionByCodeSoapOut">
+    <part name="parameters" element="types:GetRegionByCodeResponse" />
+  </message>
+  <message name="GetRegionChildrenSoapIn">
+    <part name="parameters" element="types:GetRegionChildren" />
+  </message>
+  <message name="GetRegionChildrenSoapOut">
+    <part name="parameters" element="types:GetRegionChildrenResponse" />
+  </message>
+  <message name="GetRegionListSoapIn">
+    <part name="parameters" element="types:GetRegionList" />
+  </message>
+  <message name="GetRegionListSoapOut">
+    <part name="parameters" element="types:GetRegionListResponse" />
+  </message>
+  <message name="PerformNewsSubjectSearchSoapIn">
+    <part name="parameters" element="types:PerformNewsSubjectSearch" />
+  </message>
+  <message name="PerformNewsSubjectSearchSoapOut">
+    <part name="parameters" element="types:PerformNewsSubjectSearchResponse" />
+  </message>
+  <message name="GetNewsSubjectByCodeSoapIn">
+    <part name="parameters" element="types:GetNewsSubjectByCode" />
+  </message>
+  <message name="GetNewsSubjectByCodeSoapOut">
+    <part name="parameters" element="types:GetNewsSubjectByCodeResponse" />
+  </message>
+  <message name="GetNewsSubjectChildrenSoapIn">
+    <part name="parameters" element="types:GetNewsSubjectChildren" />
+  </message>
+  <message name="GetNewsSubjectChildrenSoapOut">
+    <part name="parameters" element="types:GetNewsSubjectChildrenResponse" />
+  </message>
+  <message name="GetNewsSubjectListSoapIn">
+    <part name="parameters" element="types:GetNewsSubjectList" />
+  </message>
+  <message name="GetNewsSubjectListSoapOut">
+    <part name="parameters" element="types:GetNewsSubjectListResponse" />
+  </message>
+  <message name="GetJobFunctionListSoapIn">
+    <part name="parameters" element="types:GetJobFunctionList" />
+  </message>
+  <message name="GetJobFunctionListSoapOut">
+    <part name="parameters" element="types:GetJobFunctionListResponse" />
+  </message>
+  <message name="GetAuditorListSoapIn">
+    <part name="parameters" element="types:GetAuditorList" />
+  </message>
+  <message name="GetAuditorListSoapOut">
+    <part name="parameters" element="types:GetAuditorListResponse" />
+  </message>
+  <message name="GetDegreeListSoapIn">
+    <part name="parameters" element="types:GetDegreeList" />
+  </message>
+  <message name="GetDegreeListSoapOut">
+    <part name="parameters" element="types:GetDegreeListResponse" />
+  </message>
+  <message name="GetDepartmentListSoapIn">
+    <part name="parameters" element="types:GetDepartmentList" />
+  </message>
+  <message name="GetDepartmentListSoapOut">
+    <part name="parameters" element="types:GetDepartmentListResponse" />
+  </message>
+  <message name="GetCurrencyListSoapIn">
+    <part name="parameters" element="types:GetCurrencyList" />
+  </message>
+  <message name="GetCurrencyListSoapOut">
+    <part name="parameters" element="types:GetCurrencyListResponse" />
+  </message>
+  <message name="GetCurrencyByCodeSoapIn">
+    <part name="parameters" element="types:GetCurrencyByCode" />
+  </message>
+  <message name="GetCurrencyByCodeSoapOut">
+    <part name="parameters" element="types:GetCurrencyByCodeResponse" />
+  </message>
+  <message name="GetIndexListSoapIn">
+    <part name="parameters" element="types:GetIndexList" />
+  </message>
+  <message name="GetIndexListSoapOut">
+    <part name="parameters" element="types:GetIndexListResponse" />
+  </message>
+  <message name="GetListInfoSoapIn">
+    <part name="parameters" element="types:GetListInfo" />
+  </message>
+  <message name="GetListInfoSoapOut">
+    <part name="parameters" element="types:GetListInfoResponse" />
+  </message>
+  <message name="GetFolderInfoSoapIn">
+    <part name="parameters" element="types:GetFolderInfo" />
+  </message>
+  <message name="GetFolderInfoSoapOut">
+    <part name="parameters" element="types:GetFolderInfoResponse" />
+  </message>
+  <message name="GetFolderInfoByIDSoapIn">
+    <part name="parameters" element="types:GetFolderInfoByID" />
+  </message>
+  <message name="GetFolderInfoByIDSoapOut">
+    <part name="parameters" element="types:GetFolderInfoByIDResponse" />
+  </message>
+  <message name="GetFolderHeadlinesSoapIn">
+    <part name="parameters" element="types:GetFolderHeadlines" />
+  </message>
+  <message name="GetFolderHeadlinesSoapOut">
+    <part name="parameters" element="types:GetFolderHeadlinesResponse" />
+  </message>
+  <message name="GetFolderHeadlinesExSoapIn">
+    <part name="parameters" element="types:GetFolderHeadlinesEx" />
+  </message>
+  <message name="GetFolderHeadlinesExSoapOut">
+    <part name="parameters" element="types:GetFolderHeadlinesExResponse" />
+  </message>
+  <message name="GetFolderHeadlinesWithFDTDedupSoapIn">
+    <part name="parameters" element="types:GetFolderHeadlinesWithFDTDedup" />
+  </message>
+  <message name="GetFolderHeadlinesWithFDTDedupSoapOut">
+    <part name="parameters" element="types:GetFolderHeadlinesWithFDTDedupResponse" />
+  </message>
+  <message name="GetNewFolderHeadlinesSoapIn">
+    <part name="parameters" element="types:GetNewFolderHeadlines" />
+  </message>
+  <message name="GetNewFolderHeadlinesSoapOut">
+    <part name="parameters" element="types:GetNewFolderHeadlinesResponse" />
+  </message>
+  <message name="GetNewFolderHeadlinesWithFDTDedupSoapIn">
+    <part name="parameters" element="types:GetNewFolderHeadlinesWithFDTDedup" />
+  </message>
+  <message name="GetNewFolderHeadlinesWithFDTDedupSoapOut">
+    <part name="parameters" element="types:GetNewFolderHeadlinesWithFDTDedupResponse" />
+  </message>
+  <message name="PerformSearchWithinFolderHeadlinesSoapIn">
+    <part name="parameters" element="types:PerformSearchWithinFolderHeadlines" />
+  </message>
+  <message name="PerformSearchWithinFolderHeadlinesSoapOut">
+    <part name="parameters" element="types:PerformSearchWithinFolderHeadlinesResponse" />
+  </message>
+  <message name="PerformSearchWithinFolderHeadlinesWithFDTDedupSoapIn">
+    <part name="parameters" element="types:PerformSearchWithinFolderHeadlinesWithFDTDedup" />
+  </message>
+  <message name="PerformSearchWithinFolderHeadlinesWithFDTDedupSoapOut">
+    <part name="parameters" element="types:PerformSearchWithinFolderHeadlinesWithFDTDedupResponse" />
+  </message>
+  <message name="ContinueFolderHeadlinesWithFDTDedupSoapIn">
+    <part name="parameters" element="types:ContinueFolderHeadlinesWithFDTDedup" />
+  </message>
+  <message name="ContinueFolderHeadlinesWithFDTDedupSoapOut">
+    <part name="parameters" element="types:ContinueFolderHeadlinesWithFDTDedupResponse" />
+  </message>
+  <message name="CreateFolderSoapIn">
+    <part name="parameters" element="types:CreateFolder" />
+  </message>
+  <message name="CreateFolderSoapOut">
+    <part name="parameters" element="types:CreateFolderResponse" />
+  </message>
+  <message name="ReviseFolderSoapIn">
+    <part name="parameters" element="types:ReviseFolder" />
+  </message>
+  <message name="ReviseFolderSoapOut">
+    <part name="parameters" element="types:ReviseFolderResponse" />
+  </message>
+  <message name="DeleteFolderSoapIn">
+    <part name="parameters" element="types:DeleteFolder" />
+  </message>
+  <message name="DeleteFolderSoapOut">
+    <part name="parameters" element="types:DeleteFolderResponse" />
+  </message>
+  <message name="GetFolderSoapIn">
+    <part name="parameters" element="types:GetFolder" />
+  </message>
+  <message name="GetFolderSoapOut">
+    <part name="parameters" element="types:GetFolderResponse" />
+  </message>
+  <message name="PostContentSoapIn">
+    <part name="parameters" element="types:PostContent" />
+  </message>
+  <message name="PostContentSoapOut">
+    <part name="parameters" element="types:PostContentResponse" />
+  </message>
+  <message name="UnpostContentSoapIn">
+    <part name="parameters" element="types:UnpostContent" />
+  </message>
+  <message name="UnpostContentSoapOut">
+    <part name="parameters" element="types:UnpostContentResponse" />
+  </message>
+  <message name="DeleteContentSoapIn">
+    <part name="parameters" element="types:DeleteContent" />
+  </message>
+  <message name="DeleteContentSoapOut">
+    <part name="parameters" element="types:DeleteContentResponse" />
+  </message>
+  <message name="AddEditorCommentSoapIn">
+    <part name="parameters" element="types:AddEditorComment" />
+  </message>
+  <message name="AddEditorCommentSoapOut">
+    <part name="parameters" element="types:AddEditorCommentResponse" />
+  </message>
+  <message name="ReviseEditorCommentSoapIn">
+    <part name="parameters" element="types:ReviseEditorComment" />
+  </message>
+  <message name="ReviseEditorCommentSoapOut">
+    <part name="parameters" element="types:ReviseEditorCommentResponse" />
+  </message>
+  <message name="GetEditorCommentSoapIn">
+    <part name="parameters" element="types:GetEditorComment" />
+  </message>
+  <message name="GetEditorCommentSoapOut">
+    <part name="parameters" element="types:GetEditorCommentResponse" />
+  </message>
+  <message name="DeleteEditorCommentSoapIn">
+    <part name="parameters" element="types:DeleteEditorComment" />
+  </message>
+  <message name="DeleteEditorCommentSoapOut">
+    <part name="parameters" element="types:DeleteEditorCommentResponse" />
+  </message>
+  <message name="AddInternalContentSoapIn">
+    <part name="parameters" element="types:AddInternalContent" />
+  </message>
+  <message name="AddInternalContentSoapOut">
+    <part name="parameters" element="types:AddInternalContentResponse" />
+  </message>
+  <message name="ReviseInternalContentSoapIn">
+    <part name="parameters" element="types:ReviseInternalContent" />
+  </message>
+  <message name="ReviseInternalContentSoapOut">
+    <part name="parameters" element="types:ReviseInternalContentResponse" />
+  </message>
+  <message name="GetInternalContentSoapIn">
+    <part name="parameters" element="types:GetInternalContent" />
+  </message>
+  <message name="GetInternalContentSoapOut">
+    <part name="parameters" element="types:GetInternalContentResponse" />
+  </message>
+  <message name="DeleteInternalContentSoapIn">
+    <part name="parameters" element="types:DeleteInternalContent" />
+  </message>
+  <message name="DeleteInternalContentSoapOut">
+    <part name="parameters" element="types:DeleteInternalContentResponse" />
+  </message>
+  <message name="GetDatasetsSoapIn">
+    <part name="parameters" element="types:GetDatasets" />
+  </message>
+  <message name="GetDatasetsSoapOut">
+    <part name="parameters" element="types:GetDatasetsResponse" />
+  </message>
+  <message name="GetDatasetFeedsSoapIn">
+    <part name="parameters" element="types:GetDatasetFeeds" />
+  </message>
+  <message name="GetDatasetFeedsSoapOut">
+    <part name="parameters" element="types:GetDatasetFeedsResponse" />
+  </message>
+  <message name="GetFeedDocumentsSoapIn">
+    <part name="parameters" element="types:GetFeedDocuments" />
+  </message>
+  <message name="GetFeedDocumentsSoapOut">
+    <part name="parameters" element="types:GetFeedDocumentsResponse" />
+  </message>
+  <message name="FaultExceptionSoapOut">
+    <part name="fault" element="types:faultException" />
+  </message>
+  <portType name="CompanyProfileSoap">
+    <operation name="PerformCompanyScreening">
+      <documentation>This transaction identifies the set of companies that meet the requested screening criteria.</documentation>
+      <input message="intf:PerformCompanyScreeningSoapIn" />
+      <output message="intf:PerformCompanyScreeningSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyScreeningEx">
+      <documentation>This transaction identifies the set of companies that meet the requested screening criteria. With content set parameter you can choose to search against wider set of caompanies.</documentation>
+      <input message="intf:PerformCompanyScreeningExSoapIn" />
+      <output message="intf:PerformCompanyScreeningExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="SortCompanyProfiles">
+      <documentation>The screening context is modified according to user's input and that can used in GetCompanyProfiles transaction.</documentation>
+      <input message="intf:SortCompanyProfilesSoapIn" />
+      <output message="intf:SortCompanyProfilesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="SortCompanyProfilesEx">
+      <documentation>The screening context is modified according to user's input and that can used in GetCompanyProfiles transaction.</documentation>
+      <input message="intf:SortCompanyProfilesExSoapIn" />
+      <output message="intf:SortCompanyProfilesExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyProfiles">
+      <documentation>This transaction returns a set of company profiles based on screening criteria.</documentation>
+      <input message="intf:GetCompanyProfilesSoapIn" />
+      <output message="intf:GetCompanyProfilesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyProfilesEx">
+      <documentation>This transaction returns a set of company profiles based on screening criteria.</documentation>
+      <input message="intf:GetCompanyProfilesExSoapIn" />
+      <output message="intf:GetCompanyProfilesExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyProfilesEx2">
+      <documentation>This transaction returns a set of company profiles based on screening criteria.</documentation>
+      <input message="intf:GetCompanyProfilesEx2SoapIn" />
+      <output message="intf:GetCompanyProfilesEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyComparison">
+      <documentation>This transaction retrieves comparison information for the requested companies.</documentation>
+      <input message="intf:PerformCompanyComparisonSoapIn" />
+      <output message="intf:PerformCompanyComparisonSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyPeerComparison">
+      <documentation>This transaction returns a list of competitors within a primary industry, based on a reference company and a specific "aggregator" parameter such as sales, employees, or market capitalization.</documentation>
+      <input message="intf:PerformCompanyPeerComparisonSoapIn" />
+      <output message="intf:PerformCompanyPeerComparisonSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyPeerComparisonEx">
+      <documentation>This transaction returns a list of competitors within a primary industry, based on a reference company and a specific "aggregator" parameter such as sales, employees, or market capitalization. With OwenershipType parameter you can choose to do comparsion against public, priavate or both.</documentation>
+      <input message="intf:PerformCompanyPeerComparisonExSoapIn" />
+      <output message="intf:PerformCompanyPeerComparisonExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsList">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListSoapIn" />
+      <output message="intf:GetCompanyDetailsListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListExSoapIn" />
+      <output message="intf:GetCompanyDetailsListExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx2">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListEx2SoapIn" />
+      <output message="intf:GetCompanyDetailsListEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx3">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListEx3SoapIn" />
+      <output message="intf:GetCompanyDetailsListEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx4">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListEx4SoapIn" />
+      <output message="intf:GetCompanyDetailsListEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx5">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListEx5SoapIn" />
+      <output message="intf:GetCompanyDetailsListEx5SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsListEx6">
+      <documentation>This transaction returns a list of references to the sources of detailed information that are available for a company.</documentation>
+      <input message="intf:GetCompanyDetailsListEx6SoapIn" />
+      <output message="intf:GetCompanyDetailsListEx6SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetails">
+      <documentation>Retrieves the detailed information about the company.</documentation>
+      <input message="intf:GetCompanyDetailsSoapIn" />
+      <output message="intf:GetCompanyDetailsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsEx">
+      <documentation>Retrieves the detailed information about the company.</documentation>
+      <input message="intf:GetCompanyDetailsExSoapIn" />
+      <output message="intf:GetCompanyDetailsExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsEx2">
+      <documentation>Retrieves the detailed information about the company.</documentation>
+      <input message="intf:GetCompanyDetailsEx2SoapIn" />
+      <output message="intf:GetCompanyDetailsEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsEx3">
+      <documentation>Retrieves the detailed information about the company.</documentation>
+      <input message="intf:GetCompanyDetailsEx3SoapIn" />
+      <output message="intf:GetCompanyDetailsEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyDetailsEx4">
+      <documentation>Retrieves the detailed information about the company.</documentation>
+      <input message="intf:GetCompanyDetailsEx4SoapIn" />
+      <output message="intf:GetCompanyDetailsEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetIndustryAverages">
+      <documentation>This transaction retrieves industry average statistics for the requested industry code.</documentation>
+      <input message="intf:GetIndustryAveragesSoapIn" />
+      <output message="intf:GetIndustryAveragesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyNewsBriefsSearch">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for news briefs related to a specified company and topic.</documentation>
+      <input message="intf:PerformCompanyNewsBriefsSearchSoapIn" />
+      <output message="intf:PerformCompanyNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyNewsBriefsSearchEx">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for news briefs related to a specified company and topic in muliple languages.</documentation>
+      <input message="intf:PerformCompanyNewsBriefsSearchExSoapIn" />
+      <output message="intf:PerformCompanyNewsBriefsSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueCompanyNewsBriefsSearch">
+      <documentation>You can use this transaction after a PerformCompanyNewsBriefsSearch to continue retrieving results from the search.</documentation>
+      <input message="intf:ContinueCompanyNewsBriefsSearchSoapIn" />
+      <output message="intf:ContinueCompanyNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformIndustryNewsBriefsSearch">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for news briefs related to a specified industry and topic.</documentation>
+      <input message="intf:PerformIndustryNewsBriefsSearchSoapIn" />
+      <output message="intf:PerformIndustryNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformIndustryNewsBriefsSearchEx">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for news briefs related to a specified industry and topic in multiple languages.</documentation>
+      <input message="intf:PerformIndustryNewsBriefsSearchExSoapIn" />
+      <output message="intf:PerformIndustryNewsBriefsSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueIndustryNewsBriefsSearch">
+      <documentation>You can use this transaction after a PerformIndustryNewsBriefsSearch to continue retrieving results from the search.</documentation>
+      <input message="intf:ContinueIndustryNewsBriefsSearchSoapIn" />
+      <output message="intf:ContinueIndustryNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformPublishedCompanyReportsSearch">
+      <documentation>This transaction performs a search of the Factiva Content Database for published reports related to a specified company. </documentation>
+      <input message="intf:PerformPublishedCompanyReportsSearchSoapIn" />
+      <output message="intf:PerformPublishedCompanyReportsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformPublishedIndustryReportsSearch">
+      <documentation>This transaction performs a search of the Factiva Content Database for published reports related to a specified industry.</documentation>
+      <input message="intf:PerformPublishedIndustryReportsSearchSoapIn" />
+      <output message="intf:PerformPublishedIndustryReportsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyKeyDevelopmentsSearch">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for key developments related to a specified company and topic.</documentation>
+      <input message="intf:PerformCompanyKeyDevelopmentsSearchSoapIn" />
+      <output message="intf:PerformCompanyKeyDevelopmentsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanyKeyDevelopmentsSearchEx">
+      <documentation>This transaction performs an initial search of the Factiva Content Database for key developments related to a specified company and topic in multiple languages.</documentation>
+      <input message="intf:PerformCompanyKeyDevelopmentsSearchExSoapIn" />
+      <output message="intf:PerformCompanyKeyDevelopmentsSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReport">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportSoapIn" />
+      <output message="intf:GetCompanyReportSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportEx">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportExSoapIn" />
+      <output message="intf:GetCompanyReportExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportEx2">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportEx2SoapIn" />
+      <output message="intf:GetCompanyReportEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportEx3">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportEx3SoapIn" />
+      <output message="intf:GetCompanyReportEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportEx4">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportEx4SoapIn" />
+      <output message="intf:GetCompanyReportEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportEx5">
+      <documentation>Retrieves company report.</documentation>
+      <input message="intf:GetCompanyReportEx5SoapIn" />
+      <output message="intf:GetCompanyReportEx5SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatements">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsSoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatementsEx">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsExSoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatementsEx2">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsEx2SoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatementsEx3">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsEx3SoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatementsEx4">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsEx4SoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyReportWithFinancialStatementsEx5">
+      <documentation>Retrieves company report with financial statments.</documentation>
+      <input message="intf:GetCompanyReportWithFinancialStatementsEx5SoapIn" />
+      <output message="intf:GetCompanyReportWithFinancialStatementsEx5SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReport">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportSoapIn" />
+      <output message="intf:GetRatioComparisonReportSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReportEx">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportExSoapIn" />
+      <output message="intf:GetRatioComparisonReportExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReportEx2">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportEx2SoapIn" />
+      <output message="intf:GetRatioComparisonReportEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReportEx3">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportEx3SoapIn" />
+      <output message="intf:GetRatioComparisonReportEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReportEx4">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportEx4SoapIn" />
+      <output message="intf:GetRatioComparisonReportEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRatioComparisonReportEx5">
+      <documentation>Retrieves company ratio comparison report.</documentation>
+      <input message="intf:GetRatioComparisonReportEx5SoapIn" />
+      <output message="intf:GetRatioComparisonReportEx5SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySnapshot">
+      <documentation>Retrieves Company Snapshot.</documentation>
+      <input message="intf:PerformCompanySnapshotSoapIn" />
+      <output message="intf:PerformCompanySnapshotSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySnapshotEx">
+      <documentation>Retrieves Company Snapshot.</documentation>
+      <input message="intf:PerformCompanySnapshotExSoapIn" />
+      <output message="intf:PerformCompanySnapshotExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySnapshotEx2">
+      <documentation>Retrieves Company Snapshot.</documentation>
+      <input message="intf:PerformCompanySnapshotEx2SoapIn" />
+      <output message="intf:PerformCompanySnapshotEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySnapshotEx3">
+      <documentation>Retrieves Company Snapshot.</documentation>
+      <input message="intf:PerformCompanySnapshotEx3SoapIn" />
+      <output message="intf:PerformCompanySnapshotEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformIndustrySnapshot">
+      <documentation>Retrieves Industry Snapshot.</documentation>
+      <input message="intf:PerformIndustrySnapshotSoapIn" />
+      <output message="intf:PerformIndustrySnapshotSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveScreening">
+      <documentation>Perform Executive Screening.</documentation>
+      <input message="intf:PerformExecutiveScreeningSoapIn" />
+      <output message="intf:PerformExecutiveScreeningSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveScreeningEx">
+      <documentation>Perform Executive Screening with optional executive consolidation.</documentation>
+      <input message="intf:PerformExecutiveScreeningExSoapIn" />
+      <output message="intf:PerformExecutiveScreeningExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveScreeningEx2">
+      <documentation>Perform Executive Screening with optional executive consolidation. With content set parameter you can choose to search against wider set of caompanies. </documentation>
+      <input message="intf:PerformExecutiveScreeningEx2SoapIn" />
+      <output message="intf:PerformExecutiveScreeningEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveSearch">
+      <documentation>Perform Executive Search.</documentation>
+      <input message="intf:PerformExecutiveSearchSoapIn" />
+      <output message="intf:PerformExecutiveSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveSearchEx">
+      <documentation>Perform Executive Search.</documentation>
+      <input message="intf:PerformExecutiveSearchExSoapIn" />
+      <output message="intf:PerformExecutiveSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveSearchEx2">
+      <documentation>Perform Executive Search with optional executive consolidation.</documentation>
+      <input message="intf:PerformExecutiveSearchEx2SoapIn" />
+      <output message="intf:PerformExecutiveSearchEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveSearchEx3">
+      <documentation>Perform Executive Search with optional executive consolidation. With content set parameter you can choose to search against wider set of caompanies.</documentation>
+      <input message="intf:PerformExecutiveSearchEx3SoapIn" />
+      <output message="intf:PerformExecutiveSearchEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveSearchEx4">
+      <documentation>Perform Executive Search with optional executive consolidation. With content set parameter you can choose to search against wider set of caompanies.</documentation>
+      <input message="intf:PerformExecutiveSearchEx4SoapIn" />
+      <output message="intf:PerformExecutiveSearchEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueExecutiveSearch">
+      <documentation>Continue Executive Search.</documentation>
+      <input message="intf:ContinueExecutiveSearchSoapIn" />
+      <output message="intf:ContinueExecutiveSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueExecutiveSearchEx">
+      <documentation>Continue Executive Search.</documentation>
+      <input message="intf:ContinueExecutiveSearchExSoapIn" />
+      <output message="intf:ContinueExecutiveSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueExecutiveSearchEx4">
+      <documentation>Continue Executive Search.</documentation>
+      <input message="intf:ContinueExecutiveSearchEx4SoapIn" />
+      <output message="intf:ContinueExecutiveSearchEx4SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="SortExecutiveProfiles">
+      <documentation>Sort Executive Profiles.</documentation>
+      <input message="intf:SortExecutiveProfilesSoapIn" />
+      <output message="intf:SortExecutiveProfilesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveProfiles">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveProfilesSoapIn" />
+      <output message="intf:GetExecutiveProfilesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveProfilesEx">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveProfilesExSoapIn" />
+      <output message="intf:GetExecutiveProfilesExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveProfilesEx2">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveProfilesEx2SoapIn" />
+      <output message="intf:GetExecutiveProfilesEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveDetails">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveDetailsSoapIn" />
+      <output message="intf:GetExecutiveDetailsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveDetailsEx">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveDetailsExSoapIn" />
+      <output message="intf:GetExecutiveDetailsExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveDetailsEx2">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveDetailsEx2SoapIn" />
+      <output message="intf:GetExecutiveDetailsEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExecutiveDetailsEx3">
+      <documentation>Get Executive Profiles.</documentation>
+      <input message="intf:GetExecutiveDetailsEx3SoapIn" />
+      <output message="intf:GetExecutiveDetailsEx3SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveNewsBriefsSearch">
+      <documentation>Perform Executive News Briefs Search.</documentation>
+      <input message="intf:PerformExecutiveNewsBriefsSearchSoapIn" />
+      <output message="intf:PerformExecutiveNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExecutiveNewsBriefsSearchEx">
+      <documentation>Perform Executive News Briefs Search in multiple languages.</documentation>
+      <input message="intf:PerformExecutiveNewsBriefsSearchExSoapIn" />
+      <output message="intf:PerformExecutiveNewsBriefsSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueExecutiveNewsBriefsSearch">
+      <documentation>Continue Executive News Briefs Search.</documentation>
+      <input message="intf:ContinueExecutiveNewsBriefsSearchSoapIn" />
+      <output message="intf:ContinueExecutiveNewsBriefsSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDNBCompanyProfile">
+      <documentation>Get DNBCompany Profile.</documentation>
+      <input message="intf:GetDNBCompanyProfileSoapIn" />
+      <output message="intf:GetDNBCompanyProfileSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDNBCompanyChildren">
+      <documentation>Get DNB Company Children.</documentation>
+      <input message="intf:GetDNBCompanyChildrenSoapIn" />
+      <output message="intf:GetDNBCompanyChildrenSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDNBCompanyBranchLocations">
+      <documentation>Get DNB Company Branches.</documentation>
+      <input message="intf:GetDNBCompanyBranchLocationsSoapIn" />
+      <output message="intf:GetDNBCompanyBranchLocationsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDNBCompanyGlobalUltimate">
+      <documentation>Get DNB Company Global Ultimate.</documentation>
+      <input message="intf:GetDNBCompanyGlobalUltimateSoapIn" />
+      <output message="intf:GetDNBCompanyGlobalUltimateSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDNBCompanyTree">
+      <documentation>Get DNB Company Tree.</documentation>
+      <input message="intf:GetDNBCompanyTreeSoapIn" />
+      <output message="intf:GetDNBCompanyTreeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetUSGovernmentOrganizations">
+      <documentation>Get US Government Organizations.</documentation>
+      <input message="intf:GetUSGovernmentOrganizationsSoapIn" />
+      <output message="intf:GetUSGovernmentOrganizationsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetUSGovernmentOrganizationSnapshot">
+      <documentation>Get US Government Organization's snapshot.</documentation>
+      <input message="intf:GetUSGovernmentOrganizationSnapshotSoapIn" />
+      <output message="intf:GetUSGovernmentOrganizationSnapshotSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformUSGovernmentExecutiveSearch">
+      <documentation>Search US Government Executive.</documentation>
+      <input message="intf:PerformUSGovernmentExecutiveSearchSoapIn" />
+      <output message="intf:PerformUSGovernmentExecutiveSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetUSGovernmentExecutiveSnapshot">
+      <documentation>Get US Government Executive's snapshot.</documentation>
+      <input message="intf:GetUSGovernmentExecutiveSnapshotSoapIn" />
+      <output message="intf:GetUSGovernmentExecutiveSnapshotSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="MarketDataSoap">
+    <operation name="GetQuote">
+      <documentation>Retrieves current quotes for the requested company symbols.</documentation>
+      <input message="intf:GetQuoteSoapIn" />
+      <output message="intf:GetQuoteSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="MembershipSoap">
+    <operation name="PerformLogin">
+      <documentation>Authenticates the user using their user id, namespace, and password.</documentation>
+      <input message="intf:PerformLoginSoapIn" />
+      <output message="intf:PerformLoginSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformEncryptedIDLogin">
+      <documentation>Authenticates the user using their encrypted id.</documentation>
+      <input message="intf:PerformEncryptedIDLoginSoapIn" />
+      <output message="intf:PerformEncryptedIDLoginSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformEmailAddressLogin">
+      <documentation>Authenticates the user using their email address and password.</documentation>
+      <input message="intf:PerformEmailAddressLoginSoapIn" />
+      <output message="intf:PerformEmailAddressLoginSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformLogout">
+      <documentation>Terminates a user session.</documentation>
+      <input message="intf:PerformLogoutSoapIn" />
+      <output message="intf:PerformLogoutSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetEncryptedID">
+      <documentation>Returns the EncryptedID for the user currently logged in.</documentation>
+      <input message="intf:GetEncryptedIDSoapIn" />
+      <output message="intf:GetEncryptedIDSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetAccountInfo">
+      <documentation>Retrieves information about a specific account.</documentation>
+      <input message="intf:GetAccountInfoSoapIn" />
+      <output message="intf:GetAccountInfoSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetClientCode">
+      <documentation>Retrieves the client codes being tracked for the current session.</documentation>
+      <input message="intf:GetClientCodeSoapIn" />
+      <output message="intf:GetClientCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="SetClientCode">
+      <documentation>Enables (sets), modifies, and disables (stops) client code tracking for the current session.</documentation>
+      <input message="intf:SetClientCodeSoapIn" />
+      <output message="intf:SetClientCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="NewsstandSoap">
+    <operation name="GetNewsstandSources">
+      <documentation>Returns information pertaining to the sources available within Newsstand.</documentation>
+      <input message="intf:GetNewsstandSourcesSoapIn" />
+      <output message="intf:GetNewsstandSourcesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsstandSections">
+      <documentation>Returns information pertaining to the sections of a specific source within Newsstand.</documentation>
+      <input message="intf:GetNewsstandSectionsSoapIn" />
+      <output message="intf:GetNewsstandSectionsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsstandHeadlines">
+      <documentation>Retrieves headlines from one or more source sections within Newsstand.</documentation>
+      <input message="intf:GetNewsstandHeadlinesSoapIn" />
+      <output message="intf:GetNewsstandHeadlinesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsstandHeadlinesWithFDT">
+      <documentation>Retrieves headlines and factiva discovery data from one or more source sections within Newsstand</documentation>
+      <input message="intf:GetNewsstandHeadlinesWithFDTSoapIn" />
+      <output message="intf:GetNewsstandHeadlinesWithFDTSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueNewsstandHeadlinesWithFDT">
+      <documentation>Retrieves headlines from one or more source sections within Newsstand which were not retrived in GetNewsstandHeadlinesWithFDT transaction.</documentation>
+      <input message="intf:ContinueNewsstandHeadlinesWithFDTSoapIn" />
+      <output message="intf:ContinueNewsstandHeadlinesWithFDTSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="RegistrationSoap">
+    <operation name="GetUserData">
+      <documentation>Retrieve user profile.</documentation>
+      <input message="intf:GetUserDataSoapIn" />
+      <output message="intf:GetUserDataSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetUserDataEx">
+      <documentation>Retrieve user profile.</documentation>
+      <input message="intf:GetUserDataExSoapIn" />
+      <output message="intf:GetUserDataExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformUserRegistration">
+      <documentation>Perform User Registration.</documentation>
+      <input message="intf:PerformUserRegistrationSoapIn" />
+      <output message="intf:PerformUserRegistrationSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformUserRegistrationEx">
+      <documentation>Perform User Registration.</documentation>
+      <input message="intf:PerformUserRegistrationExSoapIn" />
+      <output message="intf:PerformUserRegistrationExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="UpdateUserData">
+      <documentation>Update user profile.</documentation>
+      <input message="intf:UpdateUserDataSoapIn" />
+      <output message="intf:UpdateUserDataSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="UpdateUserDataEx">
+      <documentation>Update user profile.</documentation>
+      <input message="intf:UpdateUserDataExSoapIn" />
+      <output message="intf:UpdateUserDataExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="UpdateUserPassword">
+      <documentation>Update User Password.</documentation>
+      <input message="intf:UpdateUserPasswordSoapIn" />
+      <output message="intf:UpdateUserPasswordSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ResetUserPassword">
+      <documentation>Reset User Password.</documentation>
+      <input message="intf:ResetUserPasswordSoapIn" />
+      <output message="intf:ResetUserPasswordSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSimplifiedEmailAddressRegistration">
+      <documentation>Perform simplified email address registration.</documentation>
+      <input message="intf:PerformSimplifiedEmailAddressRegistrationSoapIn" />
+      <output message="intf:PerformSimplifiedEmailAddressRegistrationSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="UpdateLoginEmailAddress">
+      <documentation>Update login email address.</documentation>
+      <input message="intf:UpdateLoginEmailAddressSoapIn" />
+      <output message="intf:UpdateLoginEmailAddressSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="EnableEmailAddressForLogin">
+      <documentation>Enable email address login.</documentation>
+      <input message="intf:EnableEmailAddressForLoginSoapIn" />
+      <output message="intf:EnableEmailAddressForLoginSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="SetupUserForEmailAddressLogin">
+      <documentation>Setup the user to login using email address.</documentation>
+      <input message="intf:SetupUserForEmailAddressLoginSoapIn" />
+      <output message="intf:SetupUserForEmailAddressLoginSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformEmailAddressRegistration">
+      <documentation>Register user for email address login.</documentation>
+      <input message="intf:PerformEmailAddressRegistrationSoapIn" />
+      <output message="intf:PerformEmailAddressRegistrationSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformEmailAddressRegistrationEx">
+      <documentation>Register user for email address login.</documentation>
+      <input message="intf:PerformEmailAddressRegistrationExSoapIn" />
+      <output message="intf:PerformEmailAddressRegistrationExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExternalReaderProfiles">
+      <documentation>Retrieve External Reader profiles list.</documentation>
+      <input message="intf:GetExternalReaderProfilesSoapIn" />
+      <output message="intf:GetExternalReaderProfilesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="RetrievalSoap">
+    <operation name="GetArticle">
+      <documentation>Retrieves the contents of one or many articles.</documentation>
+      <input message="intf:GetArticleSoapIn" />
+      <output message="intf:GetArticleSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetArticleEx">
+      <documentation>Retrieves the contents of one or many articles with additional infromation.</documentation>
+      <input message="intf:GetArticleExSoapIn" />
+      <output message="intf:GetArticleExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetHTML">
+      <documentation>Retrieves the contents of one or many HTML documents.</documentation>
+      <input message="intf:GetHTMLSoapIn" />
+      <output message="intf:GetHTMLSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetPicture">
+      <documentation>Retrieves the contents of one or many pictures.</documentation>
+      <input message="intf:GetPictureSoapIn" />
+      <output message="intf:GetPictureSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetPDF">
+      <documentation>Retrieves the contents of one or many PDFs.</documentation>
+      <input message="intf:GetPDFSoapIn" />
+      <output message="intf:GetPDFSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExternalURL">
+      <documentation>Retrieves the URL for external web pages.</documentation>
+      <input message="intf:GetExternalURLSoapIn" />
+      <output message="intf:GetExternalURLSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetContent">
+      <documentation>Retrieves the content associated to one or many references.</documentation>
+      <input message="intf:GetContentSoapIn" />
+      <output message="intf:GetContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="SearchSoap">
+    <operation name="PerformContentSearch">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases.</documentation>
+      <input message="intf:PerformContentSearchSoapIn" />
+      <output message="intf:PerformContentSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueContentSearch">
+      <documentation>Retrieves content references that were not retrieved during an initial search using PerformContentSearch.</documentation>
+      <input message="intf:ContinueContentSearchSoapIn" />
+      <output message="intf:ContinueContentSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformContentSearchWithFDT">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases.</documentation>
+      <input message="intf:PerformContentSearchWithFDTSoapIn" />
+      <output message="intf:PerformContentSearchWithFDTSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformContentSearchWithFDTDedup">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases, with deduplication feature.</documentation>
+      <input message="intf:PerformContentSearchWithFDTDedupSoapIn" />
+      <output message="intf:PerformContentSearchWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformContentSearchWithFDTDedupEx">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases, with deduplication feature. Support multiple content categories.</documentation>
+      <input message="intf:PerformContentSearchWithFDTDedupExSoapIn" />
+      <output message="intf:PerformContentSearchWithFDTDedupExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformContentSearchWithFDTEx">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases.</documentation>
+      <input message="intf:PerformContentSearchWithFDTExSoapIn" />
+      <output message="intf:PerformContentSearchWithFDTExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetMaxNavigatorElements">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases.</documentation>
+      <input message="intf:GetMaxNavigatorElementsSoapIn" />
+      <output message="intf:GetMaxNavigatorElementsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetMaxNavigatorElementsEx">
+      <documentation>Performs an initial search against Factiva's global archive using keywords and phrases. Support multiple content categories.</documentation>
+      <input message="intf:GetMaxNavigatorElementsExSoapIn" />
+      <output message="intf:GetMaxNavigatorElementsExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueContentSearchWithFDT">
+      <documentation>Retrieves content references that were not retrieved during an initial search using PerformContentSearch.</documentation>
+      <input message="intf:ContinueContentSearchWithFDTSoapIn" />
+      <output message="intf:ContinueContentSearchWithFDTSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueContentSearchWithFDTDedup">
+      <documentation>Retrieves content references that were not retrieved during an initial search using PerformContentSearch, with deduplication feature.</documentation>
+      <input message="intf:ContinueContentSearchWithFDTDedupSoapIn" />
+      <output message="intf:ContinueContentSearchWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueContentSearchWithFDTDedupEx">
+      <documentation>Retrieves content references that were not retrieved during an initial search using PerformContentSearch, with deduplication feature. Support multiple content categories.</documentation>
+      <input message="intf:ContinueContentSearchWithFDTDedupExSoapIn" />
+      <output message="intf:ContinueContentSearchWithFDTDedupExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSourceSearch">
+      <documentation>Performs an initial search against Factiva's database of content sources using keywords and phrases.</documentation>
+      <input message="intf:PerformSourceSearchSoapIn" />
+      <output message="intf:PerformSourceSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSourceSearchEx">
+      <documentation>Performs an initial search against Factiva's database of content sources using keywords and phrases.</documentation>
+      <input message="intf:PerformSourceSearchExSoapIn" />
+      <output message="intf:PerformSourceSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueSourceSearch">
+      <documentation>Retrieves source references that were not retrieved during an initial search using PerformSourceSearch.</documentation>
+      <input message="intf:ContinueSourceSearchSoapIn" />
+      <output message="intf:ContinueSourceSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueSourceSearchEx">
+      <documentation>Retrieves source references that were not retrieved during an initial search using PerformSourceSearch.</documentation>
+      <input message="intf:ContinueSourceSearchExSoapIn" />
+      <output message="intf:ContinueSourceSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSourceGroupSearch">
+      <documentation>Performs an initial search against Factiva's database of content source groups using keywords and phrases.</documentation>
+      <input message="intf:PerformSourceGroupSearchSoapIn" />
+      <output message="intf:PerformSourceGroupSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSourceGroupSearchEx">
+      <documentation>Performs an initial search against Factiva's database of content source groups using keywords and phrases.</documentation>
+      <input message="intf:PerformSourceGroupSearchExSoapIn" />
+      <output message="intf:PerformSourceGroupSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueSourceGroupSearch">
+      <documentation>Retrieves source group references that were not retrieved during an initial search using PerformSourceGroupSearch.</documentation>
+      <input message="intf:ContinueSourceGroupSearchSoapIn" />
+      <output message="intf:ContinueSourceGroupSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueSourceGroupSearchEx">
+      <documentation>Retrieves source group references that were not retrieved during an initial search using PerformSourceGroupSearch.</documentation>
+      <input message="intf:ContinueSourceGroupSearchExSoapIn" />
+      <output message="intf:ContinueSourceGroupSearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourcesByCategory">
+      <documentation>Retrieves a list of sources and/or source groups within a specified source category.</documentation>
+      <input message="intf:GetSourcesByCategorySoapIn" />
+      <output message="intf:GetSourcesByCategorySoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourcesByCategoryEx">
+      <documentation>Retrieves a list of sources and/or source groups within a specified source category.</documentation>
+      <input message="intf:GetSourcesByCategoryExSoapIn" />
+      <output message="intf:GetSourcesByCategoryExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourcesByTitle">
+      <documentation>Retrieves a list of sources by the first character in the source's title (name).</documentation>
+      <input message="intf:GetSourcesByTitleSoapIn" />
+      <output message="intf:GetSourcesByTitleSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourcesByTitleEx">
+      <documentation>Retrieves a list of sources by the first character in the source's title (name).</documentation>
+      <input message="intf:GetSourcesByTitleExSoapIn" />
+      <output message="intf:GetSourcesByTitleExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourcesByCode">
+      <documentation>Retrieves a list of sources pertaining to a supplied list of source codes.</documentation>
+      <input message="intf:GetSourcesByCodeSoapIn" />
+      <output message="intf:GetSourcesByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetSourceGroupsByCode">
+      <documentation>Retrieves a list of source groups pertaining to a supplied list of source group codes.</documentation>
+      <input message="intf:GetSourceGroupsByCodeSoapIn" />
+      <output message="intf:GetSourceGroupsByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="TaxonomySoap">
+    <operation name="PerformCompanySearch">
+      <documentation>Perform Company Search.</documentation>
+      <input message="intf:PerformCompanySearchSoapIn" />
+      <output message="intf:PerformCompanySearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySearchEx">
+      <documentation>Perform Company Search Ex.</documentation>
+      <input message="intf:PerformCompanySearchExSoapIn" />
+      <output message="intf:PerformCompanySearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformCompanySearchEx2">
+      <documentation>Perform Company Search Ex2.</documentation>
+      <input message="intf:PerformCompanySearchEx2SoapIn" />
+      <output message="intf:PerformCompanySearchEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueCompanySearch">
+      <documentation>Continue Company Search.</documentation>
+      <input message="intf:ContinueCompanySearchSoapIn" />
+      <output message="intf:ContinueCompanySearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueCompanySearchEx">
+      <documentation>Continue Company Search Ex.</documentation>
+      <input message="intf:ContinueCompanySearchExSoapIn" />
+      <output message="intf:ContinueCompanySearchExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueCompanySearchEx2">
+      <documentation>Continue Company Search Ex2.</documentation>
+      <input message="intf:ContinueCompanySearchEx2SoapIn" />
+      <output message="intf:ContinueCompanySearchEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyByCode">
+      <documentation>Get Company by providing code.</documentation>
+      <input message="intf:GetCompanyByCodeSoapIn" />
+      <output message="intf:GetCompanyByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyByCodeEx">
+      <documentation>Get Company by providing code.</documentation>
+      <input message="intf:GetCompanyByCodeExSoapIn" />
+      <output message="intf:GetCompanyByCodeExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCompanyByCodeEx2">
+      <documentation>Get Company by providing code.</documentation>
+      <input message="intf:GetCompanyByCodeEx2SoapIn" />
+      <output message="intf:GetCompanyByCodeEx2SoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformInstrumentSearch">
+      <documentation>Perform Instrument Search.</documentation>
+      <input message="intf:PerformInstrumentSearchSoapIn" />
+      <output message="intf:PerformInstrumentSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueInstrumentSearch">
+      <documentation>Continue Instrument Search.</documentation>
+      <input message="intf:ContinueInstrumentSearchSoapIn" />
+      <output message="intf:ContinueInstrumentSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetInstrumentByCode">
+      <documentation>Get Instrument by providing code.</documentation>
+      <input message="intf:GetInstrumentByCodeSoapIn" />
+      <output message="intf:GetInstrumentByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformExchangeSearch">
+      <documentation>Perform Exchange Search.</documentation>
+      <input message="intf:PerformExchangeSearchSoapIn" />
+      <output message="intf:PerformExchangeSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExchangeByCode">
+      <documentation>Get Exchange by providing code.</documentation>
+      <input message="intf:GetExchangeByCodeSoapIn" />
+      <output message="intf:GetExchangeByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetExchangeList">
+      <documentation>Get Exchange List.</documentation>
+      <input message="intf:GetExchangeListSoapIn" />
+      <output message="intf:GetExchangeListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformIndustrySearch">
+      <documentation>Perform Industry Search.</documentation>
+      <input message="intf:PerformIndustrySearchSoapIn" />
+      <output message="intf:PerformIndustrySearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetIndustryByCode">
+      <documentation>Get Industry by providing code.</documentation>
+      <input message="intf:GetIndustryByCodeSoapIn" />
+      <output message="intf:GetIndustryByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetIndustryChildren">
+      <documentation>Get Industry children by providing code.</documentation>
+      <input message="intf:GetIndustryChildrenSoapIn" />
+      <output message="intf:GetIndustryChildrenSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetIndustryList">
+      <documentation>Get Industry List.</documentation>
+      <input message="intf:GetIndustryListSoapIn" />
+      <output message="intf:GetIndustryListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformRegionSearch">
+      <documentation>Perform Region Search.</documentation>
+      <input message="intf:PerformRegionSearchSoapIn" />
+      <output message="intf:PerformRegionSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRegionByCode">
+      <documentation>Get Region by providing code.</documentation>
+      <input message="intf:GetRegionByCodeSoapIn" />
+      <output message="intf:GetRegionByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRegionChildren">
+      <documentation>Get Region children by providing code.</documentation>
+      <input message="intf:GetRegionChildrenSoapIn" />
+      <output message="intf:GetRegionChildrenSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetRegionList">
+      <documentation>Get Region List.</documentation>
+      <input message="intf:GetRegionListSoapIn" />
+      <output message="intf:GetRegionListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformNewsSubjectSearch">
+      <documentation>Perform News Subject Search.</documentation>
+      <input message="intf:PerformNewsSubjectSearchSoapIn" />
+      <output message="intf:PerformNewsSubjectSearchSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsSubjectByCode">
+      <documentation>Get News Subject by providing code.</documentation>
+      <input message="intf:GetNewsSubjectByCodeSoapIn" />
+      <output message="intf:GetNewsSubjectByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsSubjectChildren">
+      <documentation>Get News Subject children by providing code.</documentation>
+      <input message="intf:GetNewsSubjectChildrenSoapIn" />
+      <output message="intf:GetNewsSubjectChildrenSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewsSubjectList">
+      <documentation>Get News Subject List.</documentation>
+      <input message="intf:GetNewsSubjectListSoapIn" />
+      <output message="intf:GetNewsSubjectListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetJobFunctionList">
+      <documentation>Get Job Function List.</documentation>
+      <input message="intf:GetJobFunctionListSoapIn" />
+      <output message="intf:GetJobFunctionListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetAuditorList">
+      <documentation>Get Auditor List.</documentation>
+      <input message="intf:GetAuditorListSoapIn" />
+      <output message="intf:GetAuditorListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDegreeList">
+      <documentation>Get Degree List.</documentation>
+      <input message="intf:GetDegreeListSoapIn" />
+      <output message="intf:GetDegreeListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDepartmentList">
+      <documentation>Get Department List.</documentation>
+      <input message="intf:GetDepartmentListSoapIn" />
+      <output message="intf:GetDepartmentListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCurrencyList">
+      <documentation>Get Currency List.</documentation>
+      <input message="intf:GetCurrencyListSoapIn" />
+      <output message="intf:GetCurrencyListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetCurrencyByCode">
+      <documentation>Get Currency by providing code.</documentation>
+      <input message="intf:GetCurrencyByCodeSoapIn" />
+      <output message="intf:GetCurrencyByCodeSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetIndexList">
+      <documentation>Get Index List.</documentation>
+      <input message="intf:GetIndexListSoapIn" />
+      <output message="intf:GetIndexListSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetListInfo">
+      <documentation>Get List Information.</documentation>
+      <input message="intf:GetListInfoSoapIn" />
+      <output message="intf:GetListInfoSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="TrackSoap">
+    <operation name="GetFolderInfo">
+      <documentation>Returns information pertaining to the users personal and/or group Track folders.</documentation>
+      <input message="intf:GetFolderInfoSoapIn" />
+      <output message="intf:GetFolderInfoSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFolderInfoByID">
+      <documentation>Retrieves information pertaining to a supplied list of Track folders.</documentation>
+      <input message="intf:GetFolderInfoByIDSoapIn" />
+      <output message="intf:GetFolderInfoByIDSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFolderHeadlines">
+      <documentation>Retrieves headlines to content tracked within a user or group Track folder.</documentation>
+      <input message="intf:GetFolderHeadlinesSoapIn" />
+      <output message="intf:GetFolderHeadlinesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFolderHeadlinesEx">
+      <documentation>Retrieves headlines to content tracked within a supplied list of user or group Track folders.</documentation>
+      <input message="intf:GetFolderHeadlinesExSoapIn" />
+      <output message="intf:GetFolderHeadlinesExSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFolderHeadlinesWithFDTDedup">
+      <documentation>Retrieves headlines with discovery elements to content tracked within a supplied list of user or group Track folders.</documentation>
+      <input message="intf:GetFolderHeadlinesWithFDTDedupSoapIn" />
+      <output message="intf:GetFolderHeadlinesWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewFolderHeadlines">
+      <documentation>Retrieves new headlines to content tracked within a user or group Track folder since last session.</documentation>
+      <input message="intf:GetNewFolderHeadlinesSoapIn" />
+      <output message="intf:GetNewFolderHeadlinesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetNewFolderHeadlinesWithFDTDedup">
+      <documentation>Retrieves new headlines with discovery elements to content tracked within a user or group Track folder since last session.</documentation>
+      <input message="intf:GetNewFolderHeadlinesWithFDTDedupSoapIn" />
+      <output message="intf:GetNewFolderHeadlinesWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSearchWithinFolderHeadlines">
+      <documentation>Search headlines within a user or group track folder.</documentation>
+      <input message="intf:PerformSearchWithinFolderHeadlinesSoapIn" />
+      <output message="intf:PerformSearchWithinFolderHeadlinesSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PerformSearchWithinFolderHeadlinesWithFDTDedup">
+      <documentation>Search headlines within a user or group track folder.</documentation>
+      <input message="intf:PerformSearchWithinFolderHeadlinesWithFDTDedupSoapIn" />
+      <output message="intf:PerformSearchWithinFolderHeadlinesWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ContinueFolderHeadlinesWithFDTDedup">
+      <documentation>Retrieves next or previous set of headlines within a user or group track folder.</documentation>
+      <input message="intf:ContinueFolderHeadlinesWithFDTDedupSoapIn" />
+      <output message="intf:ContinueFolderHeadlinesWithFDTDedupSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="CreateFolder">
+      <documentation>Create personal or group Folder.</documentation>
+      <input message="intf:CreateFolderSoapIn" />
+      <output message="intf:CreateFolderSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ReviseFolder">
+      <documentation>Revise personal or group Folder.</documentation>
+      <input message="intf:ReviseFolderSoapIn" />
+      <output message="intf:ReviseFolderSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="DeleteFolder">
+      <documentation>Delete personal or group Folder.</documentation>
+      <input message="intf:DeleteFolderSoapIn" />
+      <output message="intf:DeleteFolderSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFolder">
+      <documentation>Get personal or group Folder Information.</documentation>
+      <input message="intf:GetFolderSoapIn" />
+      <output message="intf:GetFolderSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="PostContent">
+      <documentation>Post group folder headlines.</documentation>
+      <input message="intf:PostContentSoapIn" />
+      <output message="intf:PostContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="UnpostContent">
+      <documentation>Unpost group folder headlines.</documentation>
+      <input message="intf:UnpostContentSoapIn" />
+      <output message="intf:UnpostContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="DeleteContent">
+      <documentation>Delete group folder headlines.</documentation>
+      <input message="intf:DeleteContentSoapIn" />
+      <output message="intf:DeleteContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="AddEditorComment">
+      <documentation>Add Editor Comment to a group folder headline.</documentation>
+      <input message="intf:AddEditorCommentSoapIn" />
+      <output message="intf:AddEditorCommentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ReviseEditorComment">
+      <documentation>Revise Editor Comment for a group folder headline.</documentation>
+      <input message="intf:ReviseEditorCommentSoapIn" />
+      <output message="intf:ReviseEditorCommentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetEditorComment">
+      <documentation>Get Editor Comment for a group folder headline.</documentation>
+      <input message="intf:GetEditorCommentSoapIn" />
+      <output message="intf:GetEditorCommentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="DeleteEditorComment">
+      <documentation>Delete Editor Comment from a group folder headline.</documentation>
+      <input message="intf:DeleteEditorCommentSoapIn" />
+      <output message="intf:DeleteEditorCommentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="AddInternalContent">
+      <documentation>Add Internal Content to group folders.</documentation>
+      <input message="intf:AddInternalContentSoapIn" />
+      <output message="intf:AddInternalContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="ReviseInternalContent">
+      <documentation>Revise Internal Content for group folders.</documentation>
+      <input message="intf:ReviseInternalContentSoapIn" />
+      <output message="intf:ReviseInternalContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetInternalContent">
+      <documentation>Get Internal Content for group folders.</documentation>
+      <input message="intf:GetInternalContentSoapIn" />
+      <output message="intf:GetInternalContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="DeleteInternalContent">
+      <documentation>Delete Internal Content from group folders.</documentation>
+      <input message="intf:DeleteInternalContentSoapIn" />
+      <output message="intf:DeleteInternalContentSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+  <portType name="InsightSoap">
+    <operation name="GetDatasets">
+      <documentation>Get datasets for a given client.</documentation>
+      <input message="intf:GetDatasetsSoapIn" />
+      <output message="intf:GetDatasetsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetDatasetFeeds">
+      <documentation>Get feeds for given dataset(s).</documentation>
+      <input message="intf:GetDatasetFeedsSoapIn" />
+      <output message="intf:GetDatasetFeedsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+    <operation name="GetFeedDocuments">
+      <documentation>Get documents for a given feed.</documentation>
+      <input message="intf:GetFeedDocumentsSoapIn" />
+      <output message="intf:GetFeedDocumentsSoapOut" />
+      <fault name="Fault" message="intf:FaultExceptionSoapOut" />
+    </operation>
+  </portType>
+</definitions>

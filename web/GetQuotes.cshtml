@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Home Page";
+
+    if (IsPost)
+    {
+        Validation.RequireField("Ticker", "Ticker must not be empty");
+    }
+
+
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title.</h1>
+        </hgroup>
+        <form method="post">
+            <label for="Ticker">Ticker:</label>
+            <select name="Ticker">
+                <option value="IBM">IBM</option>
+            </select>
+            <br />
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+    </div>
+</section>
+}
+
+@{
+    if (IsPost & Validation.IsValid())
+    {
+
+        try
+        {
+            FDKObjects.wsdl.MarketDataSoapClient objRequest = new FDKObjects.wsdl.MarketDataSoapClient();
+            string[] symbols = { Request.Form["Ticker"] };
+            FDKObjects.wsdl.QuoteResponse objResponse;
+            objResponse = objRequest.GetQuote(HttpUtility.UrlDecode(Request.Cookies["Auth"]["controlData"]), symbols, true);
+
+            foreach (FDKObjects.wsdl.Quote q in objResponse.quoteResultSet.quote)
+            {
+                <p>@q.companyName:  @q.closePrice </p>
+            }
+        }
+        catch (System.Web.Services.Protocols.SoapException exs)
+        {
+            <p>@exs.Detail.OuterXml.ToString()</p>
+        }
+        catch (System.ServiceModel.FaultException fex)
+        {
+            <p>There was an error with this request. Please check the logs for more information. @fex.Reason.ToString()</p>
+
+        }
+
+
+
+    }
+}

@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Credentials";
+
+    if (IsPost)
+    {
+        Validation.RequireField("Username", "Username must not be empty");
+        Validation.RequireField("Password", "Password must not be empty");
+        Validation.RequireField("Namespace", "Namespace must not be empty");
+    }
+
+
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title</h1>
+        </hgroup>
+       @if (Request.Cookies["Flash"] != null && Request.Cookies["Flash"]["message"] != null)
+       {
+        <div class="alert-message warning">
+            <p>@Request.Cookies["Flash"]["message"]</p>
+        </div>
+       }
+        <div>
+            <h2>Getting Started:</h2>
+            <p>Enter in your credentials and click submit. Then, click link to the call you want to make in the upper-right nav menu.</p>
+        </div>
+        <form action="/" method="post">
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" value="@Request.Form["Username"]" />
+            @Html.ValidationMessage("Username")
+            <label for="Password">Password:</label>
+            <input type="text" name="Password" value="@Request.Form["Password"]" />
+            @Html.ValidationMessage("Password")
+            <label for="Namespace">Namespace:</label>
+            <input type="text" name="Namespace" value="@Request.Form["Namespace"]" />
+            @Html.ValidationMessage("Namespace")
+            <br />
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+    </div>
+</section>
+}
+
+@{
+    if (IsPost & Validation.IsValid())
+    {
+        string cookieData = "UID=" + Request.Form["Username"].Trim() + "&PWD=" + Request.Form["Password"].Trim() + "&NS=" + Request.Form["Namespace"].Trim();
+        Response.Cookies["Auth"]["controlData"] = HttpUtility.UrlEncode(cookieData);
+        Response.Cookies["Flash"]["message"] = "Credentials have been saved to a cookie.";
+    }
+}
